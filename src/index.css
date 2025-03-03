@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Montserrat-thin';
+  src: url('../src/assets/fonts/Montserrat-Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Montserrat-regular';
+  src: url('../src/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: url('../src/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

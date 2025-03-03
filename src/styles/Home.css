@@ -1,0 +1,76 @@
+.home{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Montserrat';
+}
+.homePage {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .parallax {
+    background-image: url("../assets/SVG/background.svg"); /* Replace with your image path */
+    background-color: #1C254C;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .home-content {
+    position: absolute;
+    top: 50%;
+    left: 5%; /* Stick to the left */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-family: 'Montserrat';
+}
+  
+  .home-title {
+    font-size: 50px;
+    font-family: 'Montserrat-regular';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #47A2DF;
+    text-align: left;
+  }
+  
+  .learn-more-button {
+    background-color: #47A2DF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    text-decoration: none;
+    width: fit-content;
+  }
+  
+  .learn-more-button:hover {
+    color: #3690C6;
+    background-color: white;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  .social-links :hover {
+    color: #47A2DF;
+  }

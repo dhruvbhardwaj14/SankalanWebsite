@@ -1,0 +1,150 @@
+.custom-navbar {
+  background: transparent;
+  position: absolute; /* Keep navbar floating over content */
+  width: 100%; /* Full-width navbar */
+  z-index: 1050; /* Ensure it's above other content */
+  }
+  
+  .custom-navbar .nav-link {
+    color: white !important; /* Custom text color for all nav links */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+    font-size: 12px;
+    font-family: 'Montserrat-regular';
+    color: white;
+    letter-spacing: 0.14em;
+  }
+  .custom-navbar .navbar-brand {
+    color: white !important; /* Custom text color for brand/logo */
+  }
+  
+  .custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%288%2C%209%2C%2010%2C%201%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Custom color for the hamburger menu icon */
+  }
+  
+  /* Darker shade on hover */
+  .custom-navbar .nav-link:hover {
+    color: #47A2DF !important; /* Darker shade of grey on hover */
+  }
+  
+  /* Darker shade for active (default "Home") */
+  .custom-navbar .nav-link.active {
+    color: #47A2DF !important; /* Darker shade for the active link */
+  }
+
+  /* Hamburger icon styling and effects */
+  .navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 17px;  /* Position from the top */
+    right: 10px;  /* Position from the right */
+    z-index: 1052;  /* Ensure it is above offcanvas content */
+    background: transparent; /* Make background transparent */
+    border: none;  /* Remove border */
+    cursor: pointer;  /* Ensure it's clickable */
+    transition: .5s ease-in-out;
+}
+
+/* Prevent outline or box-shadow on focus and active state */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ffffff ;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+  background: linear-gradient(90deg, rgba(71, 162, 223, 1) 0%, rgba(30, 110, 180, 1) 100%);
+}
+
+.offcanvas-body {
+  padding-top: 50px;  /* Give space for the toggler icon, adjust as needed */
+}
+
+.custom-offcanvas {
+  background: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent background */
+  backdrop-filter: none; /* Blur effect */
+  z-index: 1051; /* Keep it above navbar */
+}
+.nav-item .register-button {
+  color: white !important; /* Force the correct background */
+  background-color: #3690C6 !important; /* Ensure text color is white */
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+}
+
+.nav-item .register-button:hover {
+  background-color: white !important; /* Ensure hover effect works */
+  color: #47A2DF  !important;
+}
