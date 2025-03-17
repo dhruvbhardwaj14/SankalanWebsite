@@ -1,0 +1,97 @@
+/* Accordion Container */
+.accordion-container {
+    display: flex;
+    flex-direction: column; /* Ensures stacking */
+    align-items: left;
+    width: 80vw;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
+  
+  /* FAQ Title */
+  .faq-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Accordion Item Box */
+  .accordion-item {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    /* background: #f1f1f1; Light background */
+  }
+  
+  /* Accordion Header */
+  .accordion-header {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    transition: background 0.3s;
+    background: transparent;
+  }
+
+  
+  
+
+
+  .accordion-header:hover {
+    background:linear-gradient(45deg, #5fc0ff, #a07bfe);;
+  }
+  
+  /* Accordion Body */
+  .accordion-body {
+    padding: 15px;
+    /* background: #ffffff; */
+    font-size: 16px;
+    border-top: 1px solid #007bff;
+    transition: max-height 0.3s ease-in-out;
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
+  
+  /* Question Text */
+  .question-text {
+    flex-grow: 1;
+  }
+  
+  /* + / - Icon */
+  .icon {
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s;
+  }
+  
+  /* Rotate "-" icon */
+  .rotate {
+    transform: rotate(180deg);
+  }
+  .faq-item {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient Background */
+    color: white; /* Text color */
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+  
+
+  /*  */
