@@ -156,13 +156,22 @@ export default class Navbar extends Component {
                   </li>
                   <li className="nav-item">
                     <Link
-                      className={`nav-link${activePath === "/updates" ? "active" : ""}`}
+                      className={`nav-link ${activePath === "/updates" ? "active" : ""}`}
                       to="/updates"
                       onClick={() => this.handleLinkClick("/updates")}
                     >
                       UPDATES
                     </Link>
                   </li>
+                  {/* <li className="nav-item">
+                    <Link
+                      className={`nav-link${activePath === "/updates" ? "active" : ""}`}
+                      to="/updates"
+                      onClick={() => this.handleLinkClick("/updates")}
+                    >
+                      UPDATES
+                    </Link>
+                  </li> */}
                 </ul>
                 <ul className="navbar-nav ms-auto mb-2 mt-4 mb-lg-0">
                   <li className="nav-item">

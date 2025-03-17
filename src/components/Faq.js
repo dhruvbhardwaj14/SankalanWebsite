@@ -1,0 +1,13 @@
+import React from "react";
+import "../styles/Components.css"; 
+const Faq = () => {
+  return (
+    <div className="mainPage">
+      <div className="Parallax">
+        
+      </div>
+    </div>
+  );
+};
+
+export default Faq;

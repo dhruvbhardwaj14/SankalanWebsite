@@ -1,4 +1,15 @@
 @font-face {
+  font-family: 'Jaturat';
+  src: url('../src/assets/fonts/Jaturat.ttf') format('opentype');
+  font-weight: 100;
+}
+p.thin { font-family: 'Jaturat', sans-serif; font-weight: 100; opacity: 0.7; transform: scaleY(0.95); }
+p.light { font-family: 'Jaturat', sans-serif; font-weight: 300; opacity: 0.8; }
+p.regular { font-family: 'Jaturat', sans-serif; font-weight: 400; }
+p.semibold { font-family: 'Jaturat', sans-serif; font-weight: 600; letter-spacing: 0.5px; }
+p.bold { font-family: 'Jaturat', sans-serif; font-weight: 700; }
+
+@font-face {
   font-family: 'Montserrat-thin';
   src: url('../src/assets/fonts/Montserrat-Thin.ttf') format('truetype');
   font-weight: 100;

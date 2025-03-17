@@ -1,0 +1,19 @@
+.updatesPage {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+.updatesParallax {
+    background-image: url("../assets/PNG/backgroundOthers.png"); /* Replace with your image path */
+    background-color: #1C254C;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }

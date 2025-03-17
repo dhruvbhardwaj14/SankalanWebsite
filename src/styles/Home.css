@@ -9,7 +9,7 @@
     overflow: hidden;
   }
   
-  .parallax {
+  .homeParallax {
     background-image: url("../assets/SVG/background.svg"); /* Replace with your image path */
     background-color: #1C254C;
     background-size: cover;

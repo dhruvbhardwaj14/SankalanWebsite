@@ -1,11 +1,11 @@
 import React from "react";
-import "../styles/Home.css"; // Ensure styles are in an external file
+import "../styles/Home.css"; 
 import { Link } from "react-router-dom"; 
 import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="homePage">
-      <div className="parallax">
+      <div className="homeParallax">
       <div className="home-content">
         <h1 className="home-title">SANKALAN<br />
          <span style={{fontSize:"40px",color:"white"}}>2025</span></h1>
