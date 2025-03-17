@@ -12,13 +12,13 @@ const Home = () => {
         <Link to="/learn-more" className="learn-more-button">REGISTER NOW!</Link>
         <div className="social-links">
         <Link to="/instagram">
-            <FaInstagram size={35} color="white"/>
+            <FaInstagram size={30} color="white"/>
         </Link>
         <Link to="/linkedin">
-            <FaLinkedin size={35} color="white"/>
+            <FaLinkedin size={30} color="white"/>
         </Link>
         <Link to="/facebook">
-            <FaFacebook size={35} color="white"/>
+            <FaFacebook size={30} color="white"/>
         </Link>
         </div>
       </div>
