@@ -400,14 +400,16 @@ height: 100vh;
 
 /* Sponsors */
 .sponsors-header {
-  position: absolute;
-  top: 10%; /* Moves it towards the top */
+  position: relative;
+  top: 10%; /*Moves it towards the top */
   left: 50%;
   transform: translateX(-50%); /* Centers horizontally */
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  
+  
 }
 
 .sponsors-title {
@@ -421,6 +423,7 @@ height: 100vh;
   display: flex;
   align-items: center;
   gap: 10px; /* Space between text and icon */
+  
 }
 
 /* Style for the icon */
@@ -471,6 +474,7 @@ height: 100vh;
   margin: 0 30px;
   font-family: 'Jaturat';
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px; /* Space between text and icon */
 }
