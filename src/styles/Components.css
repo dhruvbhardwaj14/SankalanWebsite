@@ -92,6 +92,56 @@ position: relative;
 }
 
 /* About */
+.about-header {
+  position: absolute;
+  top: 10%; /* Moves it towards the top */
+  left: 50%;
+  transform: translateX(-50%); /* Centers horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about-title {
+  font-size: 5vw; /* Responsive font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 30px;
+  font-family: 'Jaturat';
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and icon */
+}
+
+/* Style for the icon */
+.about-icon {
+  font-size: 4vw; /* Responsive icon size */
+  color: #ffffff; /* Highlight color */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 7vw; /* Larger for mobile */
+  }
+  
+  .about-icon {
+    font-size: 6vw; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 8vw;
+  }
+
+  .about-icon {
+    font-size: 7vw;
+  }
+}
 
 
 
@@ -154,13 +204,205 @@ position: relative;
   
 
 /* Team */
+.team-header {
+  position: absolute;
+  top: 10%; /* Moves it towards the top */
+  left: 50%;
+  transform: translateX(-50%); /* Centers horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
+.team-title {
+  font-size: 5vw; /* Responsive font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 30px;
+  font-family: 'Jaturat';
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and icon */
+}
+
+/* Style for the icon */
+.team-icon {
+  font-size: 4vw; /* Responsive icon size */
+  color: #ffffff; /* Highlight color */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .team-title {
+    font-size: 7vw; /* Larger for mobile */
+  }
+  
+  .team-icon {
+    font-size: 6vw; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-title {
+    font-size: 8vw;
+  }
+
+  .team-icon {
+    font-size: 7vw;
+  }
+}
 
 /* Sponsors */
+.sponsors-header {
+  position: absolute;
+  top: 10%; /* Moves it towards the top */
+  left: 50%;
+  transform: translateX(-50%); /* Centers horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
+.sponsors-title {
+  font-size: 5vw; /* Responsive font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 30px;
+  font-family: 'Jaturat';
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and icon */
+}
+
+/* Style for the icon */
+.sponsor-icon {
+  font-size: 4vw; /* Responsive icon size */
+  color: #fafafa; /* Highlight color */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .sponsors-title {
+    font-size: 7vw; /* Larger for mobile */
+  }
+  
+  .sponsor-icon {
+    font-size: 6vw; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-title {
+    font-size: 8vw;
+  }
+
+  .sponsor-icon {
+    font-size: 7vw;
+  }
+}
 
 /* Faq */
+.faq-header {
+  position: absolute;
+  top: 10%; /* Moves it towards the top */
+  left: 50%;
+  transform: translateX(-50%); /* Centers horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
+.faq-title {
+  font-size: 5vw; /* Responsive font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 30px;
+  font-family: 'Jaturat';
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and icon */
+}
+
+/* Style for the icon */
+.faq-icon {
+  font-size: 4vw; /* Responsive icon size */
+  color: #ffffff; /* Highlight color */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 7vw; /* Larger for mobile */
+  }
+  
+  .faq-icon {
+    font-size: 6vw; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-title {
+    font-size: 8vw;
+  }
+
+  .faq-icon {
+    font-size: 7vw;
+  }
+}
 
 /* Updates */
+.updates-header {
+  position: absolute;
+  top: 10%; /* Moves it towards the top */
+  left: 50%;
+  transform: translateX(-50%); /* Centers horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.updates-title {
+  font-size: 5vw; /* Responsive font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 30px;
+  font-family: 'Jaturat';
+}
+
+.updates-icon {
+  margin-left: 10px;
+  font-size: 4vw; /* Responsive icon size */
+  color: #ffffff; /* Highlight color */
+}
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .updates-title {
+    font-size: 7vw; /* Larger for mobile */
+  }
   
+  .updates-icon {
+    font-size: 6vw; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .updates-title {
+    font-size: 8vw;
+  }
+
+  .updates-icon {
+    font-size: 7vw;
+  }
+}
