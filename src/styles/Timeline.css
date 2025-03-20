@@ -1,11 +1,11 @@
-.timeline-container {
+.updateTimeline-container {
   padding: 50px;
   background: #f4f7fc;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.timeline-title {
+.updateTimeline-title {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 30px;
@@ -13,14 +13,14 @@
 }
 
 /* Timeline Layout */
-.timeline {
+.updateTimeline {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
 }
 
 /* Timeline Item */
-.timeline-item {
+.updateTimeline-item {
   padding: 20px;
   background: #fff;
   border-radius: 12px;
@@ -29,12 +29,12 @@
   transition: transform 0.3s ease;
 }
 
-.timeline-item:hover {
+.updateTimeline-item:hover {
   transform: scale(1.05);
 }
 
 /* Date Section */
-.timeline-date {
+.updateTimeline-date {
   font-size: 1rem;
   font-weight: bold;
   color: #1e3c72;
@@ -42,69 +42,69 @@
 }
 
 /* Timeline Content */
-.timeline-content h3 {
+.updateTimeline-content h3 {
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
 
-.timeline-content p {
+.updateTimeline-content p {
   font-size: 1rem;
   color: #555;
 }
 
 /* 📱 Responsive Design */
 @media (max-width: 768px) {
-  .timeline-container {
+  .updateTimeline-container {
     padding: 30px;
   }
 
-  .timeline {
+  .updateTimeline {
     max-width: 100%;
   }
 
-  .timeline-item {
+  .updateTimeline-item {
     padding: 15px;
   }
 
-  .timeline-title {
+  .updateTimeline-title {
     font-size: 1.5rem;
   }
 
-  .timeline-date {
+  .updateTimeline-date {
     font-size: 0.9rem;
   }
 
-  .timeline-content h3 {
+  .updateTimeline-content h3 {
     font-size: 1.2rem;
   }
 
-  .timeline-content p {
+  .updateTimeline-content p {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
-  .timeline-container {
+  .updateTimeline-container {
     padding: 20px;
   }
 
-  .timeline-title {
+  .updateTimeline-title {
     font-size: 1.3rem;
   }
 
-  .timeline-item {
+  .updateTimeline-item {
     padding: 12px;
   }
 
-  .timeline-date {
+  .updateTimeline-date {
     font-size: 0.8rem;
   }
 
-  .timeline-content h3 {
+  .updateTimeline-content h3 {
     font-size: 1rem;
   }
 
-  .timeline-content p {
+  .updateTimeline-content p {
     font-size: 0.8rem;
   }
 }

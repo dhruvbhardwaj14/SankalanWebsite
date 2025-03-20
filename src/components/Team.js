@@ -89,86 +89,112 @@ const Team = () => {
     <div className="team-container">
       {/* Header */}
       <div className="teamParallax">
-      <div className="team-header">
-        <h1 className="team-title">
-          OUR TEAM
-          <span className="team-icon">
-            <FontAwesomeIcon icon={faUsers} />
-          </span>
-        </h1>
-      </div>
-
-      {/* Content Wrapper to ensure all content is below the header */}
-      <div className="team-content">
-        {/* Left Half */}
-        <div className="team-left">
-          <div className="team-categories">
-            {teamCategories.map((category) => (
-              <div 
-                key={category} 
-                className={`category ${selectedCategory === category ? "active" : ""}`} 
-                onClick={() => {
-                  setSelectedCategory(category);
-                  setSelectedIndex(0);
-                }}
-              >
-                {category}
-              </div>
-            ))}
-          </div>
-
-          <div className="team-list">
-            {teamMembers[selectedCategory].map((member, index) => (
-              <div 
-                key={index} 
-                className={`team-member ${selectedIndex === index ? "selected" : ""}`} 
-                onMouseEnter={() => setSelectedIndex(index)}
-              >
-                {member.name}
-              </div>
-            ))}
-          </div>
+        <div className="team-header">
+          <h1 className="team-title">
+            OUR TEAM
+            <span className="team-icon">
+              <FontAwesomeIcon icon={faUsers} />
+            </span>
+          </h1>
         </div>
-
-        {/* Right Half - Vertical Carousel */}
-        <div 
-          className="team-right" 
-          onWheel={handleScroll} 
-          onTouchStart={handleTouchStart} 
-          onTouchMove={handleTouchMove} 
-          ref={carouselRef}
-        >
-          <div className="carousel-controls">
-            <FontAwesomeIcon icon={faChevronUp} onClick={handlePrev} className="arrow up" />
-          </div>
-
-          <div className="team-card slide-up">
-            <img src={selectedMember.img} alt={selectedMember.name} className="team-img" />
-            <div className="team-info">
-              <h3>{selectedMember.name}</h3>
-              <p>{selectedMember.role}</p>
-              <div className="team-socials">
-                <a href={selectedMember.linkedin} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-                <a href={selectedMember.github} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a href={selectedMember.twitter} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
+  
+        {/* Mobile-First Categories - Slider on Top */}
+        <div className="team-categories">
+          {teamCategories.map((category) => (
+            <div
+              key={category}
+              className={`category ${selectedCategory === category ? "active" : ""}`}
+              onClick={() => {
+                setSelectedCategory(category);
+                setSelectedIndex(0);
+              }}
+            >
+              {category}
+            </div>
+          ))}
+        </div>
+  
+        {/* === Updated Mobile Grid Section === */}
+        <div className="team-grid">
+          {teamMembers[selectedCategory].map((member, index) => (
+            <div key={index} className="team-card-grid">
+              <img src={member.img} alt={member.name} className="team-img-grid" />
+              <div className="team-info-grid">
+                <h3>{member.name}</h3>
+                <p>{member.role}</p>
+                <div className="team-socials-grid">
+                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                  <a href={member.github} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                  <a href={member.twitter} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                </div>
               </div>
             </div>
+          ))}
+        </div>
+  
+        {/* === Original Content for Larger Screens === */}
+        <div className="team-content">
+          {/* Left Section Hidden in Mobile */}
+          <div className="team-left">
+            <div className="team-list">
+              {teamMembers[selectedCategory].map((member, index) => (
+                <div
+                  key={index}
+                  className={`team-member ${selectedIndex === index ? "selected" : ""}`}
+                  onMouseEnter={() => setSelectedIndex(index)}
+                >
+                  {member.name}
+                </div>
+              ))}
+            </div>
           </div>
-
-          <div className="carousel-controls">
-            <FontAwesomeIcon icon={faChevronDown} onClick={handleNext} className="arrow down" />
+  
+          {/* Right Section - Carousel for Larger Screens */}
+          <div
+            className="team-right"
+            onWheel={handleScroll}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            ref={carouselRef}
+          >
+            <div className="carousel-controls">
+              <FontAwesomeIcon icon={faChevronUp} onClick={handlePrev} className="arrow up" />
+            </div>
+  
+            <div className="team-card slide-up">
+              <img src={selectedMember.img} alt={selectedMember.name} className="team-img" />
+              <div className="team-info">
+                <h3>{selectedMember.name}</h3>
+                <p>{selectedMember.role}</p>
+                <div className="team-socials">
+                  <a href={selectedMember.linkedin} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                  <a href={selectedMember.github} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                  <a href={selectedMember.twitter} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <div className="carousel-controls">
+              <FontAwesomeIcon icon={faChevronDown} onClick={handleNext} className="arrow down" />
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );
+  
 };
 
 export default Team;

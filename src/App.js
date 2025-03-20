@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import About from './components/About';
+// import About from './components/About';
 import Events from './components/Events'
 import Faq from './components/Faq'
 import Sponsor from './components/Sponsor'
@@ -38,7 +38,6 @@ function App() {
       {/* <Route exact path="/" element={<Registration />} /> */}
       {/* <Route exact path="/home" element={<Home />} /> */}
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/about" element={<About />} />
       <Route exact path="/team" element={<Team />} />
       <Route exact path="/events" element={<Events />} />
       <Route exact path="/faq" element={<Faq />} />

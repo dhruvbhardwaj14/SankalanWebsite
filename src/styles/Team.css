@@ -45,16 +45,25 @@
     display: flex;
     flex: 1;
     width: 100%;
-    margin-top: 10%;
 }
 
-/* Left Side */
+/* Left Side with Blue Box */
 .team-left {
     width: 40%;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    /* Blue Box Style */
+    background: linear-gradient(to bottom right, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Light border */
+    color: white;
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Right Side */
@@ -69,59 +78,86 @@
     position: relative;
 }
 
-/* Team Categories */
+/* Team Categories with Left Alignment */
+
 .team-categories {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 20%;
+    gap: 10px; /* Reduced gap */
+    margin-top: 1%;
+    margin-bottom: 10px;
+    justify-content: flex-start; /* Align to the left */
 }
 
+/* Category Button - Smaller and Compact */
 .category {
     cursor: pointer;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 2px solid white;
-    background: transparent;
+    font-size: 0.9rem; /* Smaller font size */
+    padding: 6px 12px; /* Compact padding */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Lighter border */
+    background: linear-gradient(to bottom right, rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.8)); /* Gradient */
     transition: 0.3s ease-in-out;
-}
-.category:hover{
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.05);
-}
-.category.active {
-    background-color: white;
-    color: rgba(15, 40, 80, 1); /* Slightly darker blue when active */
-    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3); /* Adds depth effect */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Hover Effect for Category - Subtle Glow */
+.category:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    border-color: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Active Category - Distinct Look with Glow Effect */
+.category.active {
+    background: white;
+    color: rgba(15, 40, 80, 1);
+    font-weight: bold;
+    border-color: rgba(42, 82, 152, 0.9);
+    box-shadow: 0 0 12px rgba(42, 82, 152, 0.8); /* Glow effect */
+    transform: scale(1.1);
+}
+
+
+/* Team Member List */
 /* Team Member List */
 .team-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px; /* Adjusted gap */
+    align-items: flex-start; /* Align left */
 }
 
+/* Team Member Button */
 .team-member {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     cursor: pointer;
-    padding: 10px;
-    border-radius: 50px;
+    padding: 8px 15px;
+    width: 90%;
+    text-align: left;
+    border-radius: 25px;
     transition: 0.3s;
-    border: 2px solid white;
-
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.1); /* Subtle background */
+    color: white;
 }
 
-.team-member:hover{
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateX(10px);
+/* Hover Effect for Team Members - Different Look */
+.team-member:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(8px); /* Slide effect */
 }
+
+/* Selected Team Member - Distinct Style */
 .team-member.selected {
     background-color: white;
-    color: rgba(15, 40, 80, 1); /* Slightly darker blue when active */
-    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3); /* Adds depth effect */
+    color: rgba(15, 40, 80, 1);
+    border-color: rgba(42, 82, 152, 0.8);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
 }
+
 /* Carousel Container */
 .team-carousel {
     width: 350px;
@@ -166,6 +202,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    aspect-ratio: 1/1; /* Ensures square ratio */
 }
 
 /* Team Info */
@@ -193,6 +230,7 @@
 
 .team-socials a:hover {
     color: #005eff;
+    cursor: pointer;
 }
 
 /* Arrows */
@@ -213,92 +251,121 @@
 .arrow:hover {
     color: lightgray;
 }
-
-/* 📱 Mobile Responsiveness */
-@media (max-width: 1024px) {
-    .team-container {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .team-left,
+/* === Updated Grid Layout for Mobile === */
+.team-grid {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 15px;
+    justify-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px; /* Add padding to the sides */
+  }
+  
+  /* === New Mobile Card Design === */
+  .team-card-grid {
+    width: 42vw;
+    height: auto;
+    max-width: 220px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden; /* Ensures image stays within rounded corners */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Image covers upper portion fully */
+  .team-img-grid {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1; /* Ensures a square ratio */
+    object-fit: cover;
+  }
+  
+  /* Member Info */
+  .team-info-grid {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  /* Name Styling */
+  .team-info-grid h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+    color: #1e3c72;
+    font-weight: bold;
+  }
+  
+  /* Role Styling */
+  .team-info-grid p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  /* Social Links Styling */
+  .team-socials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  
+  /* Social Icons */
+  .team-socials-grid a {
+    font-size: 1.2rem;
+    color: #1e3c72;
+    transition: 0.3s;
+  }
+  
+  .team-socials-grid a:hover {
+    color: #005eff;
+  }
+  
+  /* Hover Effect for Grid Card */
+  .team-card-grid:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  }
+/* Media Query for Mobile */
+@media (max-width: 1011px) {
     .team-right {
+        display: none; /* Hide carousel for mobile */
+    }
+
+    .team-left {
+        display: none;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2-3 per row */
+        gap: 12px;
         width: 100%;
-        padding: 20px;
-        text-align: center;
+        padding: 0 5px;
+        margin-top: 15px;
     }
 
-    .team-categories {
-        justify-content: center;
+    /* Adjusting Grid for Smaller Screens */
+    @media (max-width: 480px) {
+        .team-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 per row on very small screens */
+        }
+    }
+    @media (min-width:700px) and (max-width: 930px) {
+        .team-grid {
+            grid-template-columns: repeat(3, 1fr); /* 2 per row on very small screens */
+        }
+    }
+    @media (min-width:930px) and (max-width: 1011px) {
+        .team-grid {
+            grid-template-columns: repeat(4, 1fr); /* 2 per row on very small screens */
+        }
+    }
+    @media (min-width:320px) and (max-width: 550px) {
+        .category{
+            font-size: 0.49rem;
+        }
     }
 
-    .team-member {
-        text-align: center;
-    }
-
-    .team-card {
-        width: 100%;
-        max-width: 320px;
-        height: 70vh;
-        padding: 20px;
-    }
-
-    .team-img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .carousel-controls {
-        justify-content: space-around;
-    }
-}
-/* 📱 Mobile Responsiveness */
-@media (max-width: 1024px) {
-    .team-container {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .team-header {
-        margin-bottom: 3vh; /* Adjusted for mobile */
-    }
-
-    .team-left,
-    .team-right {
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .team-categories {
-        justify-content: center;
-    }
-
-    .team-member {
-        text-align: center;
-    }
-
-    .team-card {
-        width: 90%;
-        max-width: 320px;
-        height: auto;
-        padding: 20px;
-    }
-
-    .team-img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .team-info h3 {
-        font-size: 1.4rem;
-    }
-
-    .team-info p {
-        font-size: 1rem;
-    }
-
-    .carousel-controls {
-        justify-content: space-around;
-    }
 }

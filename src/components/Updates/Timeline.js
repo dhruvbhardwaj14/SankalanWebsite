@@ -47,13 +47,13 @@ const formatDate = (dateString) => {
 };
 const Timeline = () => {
   return (
-    <div className="timeline-container">
-      <h2 className="timeline-title">Event Timeline</h2>
+    <div className="updateTimeline-container">
+      <h2 className="updateTimeline-title">Event Timeline</h2>
       <div className="timeline">
         {events.map((event) => (
-          <div key={event.id} className="timeline-item">
-            <div className="timeline-date">{formatDate(event.date)}</div>
-            <div className="timeline-content">
+          <div key={event.id} className="updateTimeline-item">
+            <div className="updateTimeline-date">{formatDate(event.date)}</div>
+            <div className="updateTimeline-content">
               <h3>{event.title}</h3>
               <p>{event.description}</p>
             </div>

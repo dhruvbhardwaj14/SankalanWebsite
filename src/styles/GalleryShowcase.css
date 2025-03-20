@@ -1,0 +1,98 @@
+/* Gallery / Showcase Section */
+.gallery-showcase {
+    padding: 6vh 10vw;
+    background: linear-gradient(to right, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+    text-align: center;
+    color: #fff;
+  }
+  
+  .gallery-showcase h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .gallery-showcase span {
+    color: #ffcc00;
+  }
+  
+  /* Masonry Grid Layout */
+  .masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* Caption Overlay */
+  .caption-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    padding: 10px 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover .caption-overlay {
+    opacity: 1;
+  }
+  
+  .caption-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #ffcc00;
+  }
+  
+  .caption-overlay p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Lightbox Styling */
+  .lightbox-caption h3 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #ffcc00;
+  }
+  
+  .lightbox-caption p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .grid-item img {
+      height: 200px;
+    }
+  
+    .caption-overlay h3 {
+      font-size: 1.2rem;
+    }
+  
+    .caption-overlay p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -110,15 +110,6 @@ export default class Navbar extends Component {
                   </li>
                   <li className="nav-item">
                     <Link
-                      className={`nav-link ${activePath === "/about" ? "active" : ""}`}
-                      to="/about"
-                      onClick={() => this.handleLinkClick("/about")}
-                    >
-                      ABOUT
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
                       className={`nav-link ${activePath === "/events" ? "active" : ""}`}
                       to="/events"
                       onClick={() => this.handleLinkClick("/events")}

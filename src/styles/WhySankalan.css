@@ -1,0 +1,56 @@
+/* Why Sankalan Section */
+.why-sankalan {
+    padding: 5vh 10vw;
+    background-color: #1c254c;
+    text-align: center;
+    color: white;
+  }
+  
+  .why-sankalan h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .why-sankalan span {
+    color: #ffcc00;
+  }
+  
+  /* USP Grid */
+  .usp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  /* USP Card */
+  .usp-card {
+    background: rgba(42, 82, 152, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .usp-card img {
+    width: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .usp-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .usp-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Hover Effect */
+  .usp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+  
