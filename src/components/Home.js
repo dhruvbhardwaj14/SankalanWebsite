@@ -9,7 +9,7 @@ const Home = () => {
       <div className="home-content">
         <h1 className="home-title">SANKALAN<br />
          <span style={{fontSize:"40px",color:"white"}}>2025</span></h1>
-        <Link to="/learn-more" className="learn-more-button">REGISTER NOW!</Link>
+        <Link to="/events" className="learn-more-button">REGISTER NOW!</Link>
         <div className="social-links">
         <Link to="/instagram">
             <FaInstagram size={30} color="white"/>
