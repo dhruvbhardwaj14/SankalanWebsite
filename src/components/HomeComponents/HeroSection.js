@@ -68,16 +68,16 @@ const HeroSection = () => {
           <span className="hero-typewriter">
           <Typewriter
             words={[
+              "Here the Future Runs on Quantum Speed.",
               "Where AI Meets Creativity!",
-              "Unleash Innovation with AI!",
-              "Sankalan 2025: Explore AI Horizons!"
+              "Sankalan 2025: Where Cyber Threats Met Cyber Solutions."
             ]}
             loop={true} // Keeps looping
             cursor
             cursorStyle="_"
             typeSpeed={80}
             deleteSpeed={60}
-            delaySpeed={1000}
+            delaySpeed={500}
           />
         </span>
         </motion.p>

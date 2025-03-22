@@ -13,18 +13,18 @@ const timelineEvents = [
   },
   {
     year: "2017",
-    title: "Collaborations with Industry Leaders",
-    description: "Partnered with top tech companies to provide mentorship and internships.",
+    title: "Launching the extraordinary",
+    description: `Entered "ALACRITY" the photography competition of DUCS where every click is your chance to shine.`,
   },
   {
-    year: "2022",
-    title: "Going Virtual During the Pandemic",
-    description: "Sankalan adapted to a virtual platform, enabling global participation.",
+    year: "2023",
+    title: "Participation That Spoke Volumes",
+    description: "SANKALAN'23 saw an outstanding participation, showcasing passion, energy, and a commitment that went above and beyond expectations. Empowered by the support and funding from DRDO.",
   },
   {
     year: "2025",
-    title: "Sankalan 20th Edition",
-    description: "Celebrating 20 years of tech brilliance, expanding into AR/VR domains.",
+    title: "Sankalan 21st Edition",
+    description: "Celebrating 20 years of tech brilliance, expanding into AI, Cyber Security and Quantum Computing domains.",
   },
 ];
 

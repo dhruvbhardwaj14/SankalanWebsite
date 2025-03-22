@@ -5,6 +5,25 @@ const AccordianItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null); // Reference to the content height
 
+  // Function to convert specific keywords to links
+  const highlightLinks = (text) => {
+    const linkMappings = {
+      About: "/about",
+      Events: "/events",
+      "Contact Us": "/contact",
+    };
+
+    // Create a regex pattern for exact case-sensitive matches
+    const regex = /\b(About|Events|Contact Us)\b/g;
+
+    return text.replace(regex, (matched) => {
+      const url = linkMappings[matched]; // Get the URL for the matched word
+      return url
+        ? `<a href="${url}" class="highlight-link">${matched}</a>`
+        : matched;
+    });
+  };
+
   // Smooth transition for opening/closing
   useEffect(() => {
     if (isOpen) {
@@ -16,6 +35,7 @@ const AccordianItem = ({ question, answer }) => {
 
   return (
     <div className="accordion-item">
+      {/* Accordion Header */}
       <button
         className="accordion-header"
         onClick={() => setIsOpen(!isOpen)}
@@ -27,11 +47,14 @@ const AccordianItem = ({ question, answer }) => {
             fontSize: "18px",
           }}
         >
-          {question}
+          {question.toUpperCase()}
         </span>
-        <span className={`icon ${isOpen ? "rotate" : ""}`}>{isOpen ? "−" : "+"}</span>
-
+        <span className={`icon ${isOpen ? "rotate" : ""}`}>
+          {isOpen ? "−" : "+"}
+        </span>
       </button>
+
+      {/* Accordion Body with highlighted links */}
       <div
         ref={contentRef}
         className={`accordion-body ${isOpen ? "open" : ""}`}
@@ -47,9 +70,10 @@ const AccordianItem = ({ question, answer }) => {
             fontStyle: "italic",
             margin: "10px 0",
           }}
-        >
-          {answer}
-        </p>
+          dangerouslySetInnerHTML={{
+            __html: highlightLinks(answer),
+          }}
+        />
       </div>
     </div>
   );

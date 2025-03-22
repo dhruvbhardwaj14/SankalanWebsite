@@ -50,12 +50,18 @@ const Home = () => {
       <h2>
         About <span>Sankalan</span>
       </h2>
-      <p>
-        Sankalan is the annual technical fest of the Department of Computer
-        Science, University of Delhi. A vibrant confluence of innovation,
-        technology, and talent where participants from various institutions
-        converge to explore, learn, and showcase their skills.
-      </p>
+      <p style={{textAlign:"justify"}}>
+      <strong>Sankalan</strong> is an esteemed festival that represents the seamless integration of 
+      <strong> knowledge</strong>, <strong>talent</strong>, <strong>innovation</strong>, and, of course, 
+      <strong> technology</strong>. Since <strong>2005</strong>, this annual two-day technical festival 
+      has steadily grown to become a premier event. Known for its distinguished platform for 
+      technologists, <strong>Sankalan</strong> serves as the ultimate arena for showcasing expertise in 
+      a wide array of both <strong>technical</strong> and <strong>non-technical events</strong>. It provides an 
+      exceptional opportunity for participants from across the country to demonstrate their 
+      <strong>skills</strong> and <strong>creativity</strong>, making it a highly anticipated gathering for 
+      <strong>tech enthusiasts</strong> and <strong>professionals</strong> alike.
+    </p>
+
     </motion.div>
     <motion.div
       className="about-illustration"
@@ -81,13 +87,16 @@ const Home = () => {
         <div className="department-container">
           <div className="department-text">
             <h2 className="department-title">About Department of Computer Science</h2>
-            <p className="department-description">
-              The Department of Computer Science at the University of Delhi is one of the most prestigious departments in India.
-              Known for its excellence in academics and research, the department provides cutting-edge knowledge and practical
-              skills to students in areas like Artificial Intelligence, Machine Learning, Big Data, and more. It also hosts
-              <strong> Sankalan </strong>, an annual technical fest that showcases the talents of students through various competitions,
-              workshops, and seminars.
+            <p className="department-description" style={{textAlign:"justify"}}>
+            The <strong>Delhi University Computer Science Society (DUCSS)</strong> is proud to represent the 
+            <strong> Department of Computer Science</strong> at the University of Delhi. We are committed to 
+            encouraging <strong>innovation</strong> and <strong>research</strong>, providing students with valuable 
+            opportunities for <strong>skill development</strong> and <strong>collaboration</strong>. Our engaging 
+            technical events create remarkable avenues for <strong>personal</strong> and <strong>professional growth</strong>. 
+            The annual technical fest, <strong>Sankalan</strong>, brings together tech enthusiasts and talented 
+            individuals from esteemed institutions across the country.
             </p>
+
             <p className="department-mission">
               Our mission is to foster innovation, critical thinking, and technological expertise while contributing to the ever-growing
               field of Computer Science.

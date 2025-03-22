@@ -1,0 +1,109 @@
+/* Privacy Page Parallax */
+.privacyParallax {
+    background-image: url("../assets/PNG/contactBackground.png"); /* AI-themed background */
+    background-size: cover;
+    background-position: center;
+    background-color: #1c254c;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 8vh;
+  }
+  
+  /* Privacy Container */
+  .privacy-container {
+    background: rgba(28, 37, 76, 0.9); /* Slight dark blue overlay */
+    color: #ffffff;
+    width: 80%;
+    max-width: 1000px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  
+  /* Privacy Header */
+  .privacy-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .privacy-title {
+    font-size: 3vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .privacy-subtitle {
+    font-size: 1vw;
+    color: #ccc;
+  }
+  
+  /* Policy Sections */
+  .policy-section {
+    margin-bottom: 25px;
+  }
+  
+  .policy-section h2 {
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+  }
+  
+  .policy-section p,
+  .policy-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+  
+  /* List Styling */
+  .policy-section ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  /* Contact Section Styling */
+  .policy-section a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .policy-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .privacy-container {
+      width: 90%;
+      padding: 25px;
+    }
+  
+    .privacy-title {
+      font-size: 6vw;
+    }
+  
+    .privacy-subtitle {
+      font-size: 3vw;
+    }
+  
+    .policy-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .policy-section p,
+    .policy-section li {
+      font-size: 0.9rem;
+    }
+  }
+  

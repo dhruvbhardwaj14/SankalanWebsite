@@ -1,7 +1,14 @@
+ body {
+  overflow-x: hidden;
+  width: 100%;
+  overflow-y: auto;
+}
+
 /* background for all other pages except home */
 .mainPage {
-position: relative;
-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .Parallax {
   background-image: url("../assets/PNG/backgroundOthers.png"); /* Replace with your image path */
@@ -626,19 +633,19 @@ height: 100vh;
 
 /* Faq */
 .faqParallax {
-  background-image: url("../assets/PNG/backgroundOthers.png"); /* Replace with your image path */
+  background-image: url("../assets/PNG/backgroundOthers.png"); /* Background */
   background-color: #1C254C;
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: auto;
+  min-height: 100vh; /* Maintain full height initially */
   display: flex;
-  flex-direction: column; /* Stack elements properly */
+  flex-direction: column;
   align-items: center;
+  padding: 5vh 0 50px; /* Padding to ensure bottom space */
+  overflow: visible; /* Prevent clipping or hiding of content */
   position: relative;
-  padding: 5vh 0 50px; /* Ensure bottom spacing */
-  overflow-y: auto; /* Enables vertical scrolling */
-  min-height: 100vh; /* Ensures it at least takes the full viewport height */
+  flex-grow: 1; /* Allows the container to take up remaining space */
 }
 .faq-header {
   position: relative;
@@ -652,14 +659,13 @@ height: 100vh;
 .faq-title {
   font-size: 5vw; /* Responsive font size */
   font-weight: bold;
-  text-transform: uppercase;
   color: #ffffff;
   text-align: center;
   margin: 0 30px;
   font-family: 'Jaturat';
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: justify;
   gap: 10px; /* Space between text and icon */
 }
 

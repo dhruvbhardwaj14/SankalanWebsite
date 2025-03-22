@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Components.css"; // Updated path if needed
+import "../styles/Components.css"; 
 import EventModal from "./Event/EventModal.js";
 
 const EventCard = ({ event }) => {

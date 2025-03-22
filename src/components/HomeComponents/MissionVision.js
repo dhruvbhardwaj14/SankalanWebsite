@@ -25,9 +25,8 @@ const MissionVision = () => {
             </div>
             <div className="flip-card-back">
               <p>
-                Our mission is to create a platform that nurtures creativity,
-                promotes knowledge sharing, and inspires innovation in the realm
-                of computer science.
+                Our mission is to celebrate creativity and ignite passion by offering 
+                a vibrant platform where ideas flourish through events that entertain, educate, and empower.
               </p>
             </div>
           </div>
@@ -42,9 +41,8 @@ const MissionVision = () => {
             </div>
             <div className="flip-card-back">
               <p>
-                Our vision is to empower the next generation of tech leaders by
-                providing them with opportunities to develop their skills and
-                network with industry experts.
+                Our vision is to be a pioneering festival that leaves an indelible mark on everyone who participates
+                 and inspires individuals to push boundaries, discover new talents, and foster lifelong connections.
               </p>
             </div>
           </div>

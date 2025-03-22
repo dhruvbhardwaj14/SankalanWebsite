@@ -6,7 +6,6 @@
   margin-bottom: 10px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient Background */
 }
 
 /* Accordion Header */
@@ -24,6 +23,7 @@
   align-items: center;
   background: transparent;
   transition: background 0.3s ease-in-out;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient Background */
 }
 
 .accordion-header:hover {
@@ -43,6 +43,7 @@
 /* When accordion is open */
 .accordion-body.open {
   padding: 15px;
+  background: none;
 }
 
 /* Icon */
@@ -55,4 +56,16 @@
 /* Rotate icon on open */
 .icon.rotate {
   transform: rotate(180deg);
+}
+/* Highlighted Link Styles */
+.highlight-link {
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.highlight-link:hover {
+  text-decoration: underline;
+  color: #48e0c4;
 }

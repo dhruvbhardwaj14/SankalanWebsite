@@ -3,7 +3,7 @@ import "../../styles/WhySankalan.css";
 import comp from "../../assets/PNG/competitiveCoding.png"
 import net from "../../assets/PNG/networking.png"
 import workshop from "../../assets/PNG/workshop.png"
-import aidata from "../../assets/PNG/AiData.png"
+import explore from "../../assets/PNG/explore.png"
 const uspData = [
   {
     img: comp,
@@ -21,9 +21,9 @@ const uspData = [
     desc: "Connect with like-minded peers and esteemed professionals from across the industry.",
   },
   {
-    img: aidata,
-    title: "AI & Data Science Focus",
-    desc: "Explore the latest trends and advancements in AI and Big Data.",
+    img: explore,
+    title: "Express. Explore. Evolve.",
+    desc: "An inspiring platform for dreamers, doers, and designers to showcase their talents.",
   },
 ];
 

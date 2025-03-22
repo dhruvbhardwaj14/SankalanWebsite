@@ -2,38 +2,45 @@ import React, { useState } from "react";
 import "../../styles/GalleryShowcase.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import pic from "../../assets/PNG/SankalanAbout.png"
+import seminar from "../../assets/PNG/seminar.png"
+import dance from "../../assets/PNG/dance.png"
+import host from "../../assets/PNG/host.png"
+import debate from "../../assets/PNG/debate.png"
+import laugh from "../../assets/PNG/laugh.png"
+import squad from "../../assets/PNG/squad.png"
 // Gallery Data
 const galleryItems = [
   {
-    src: pic,
-    title: "AI Hackathon",
-    caption: "Participants collaborating during the AI Hackathon.",
+    src: dance,
+    title: "Dancing to the rythm of teamwork",
+    caption: "Pure fire on stage with unstoppable moves",
   },
   {
-    src: pic,
-    title: "Tech Talks",
-    caption: "Insights from industry leaders on the latest tech trends.",
+    src: host,
+    title: "Mic check,energy set,let's go",
+    caption: "Dynamic duo lightning up the event with high vibes.",
+  },
+  
+  {
+    src: laugh,
+    title: "Making memories one laugh at a time!",
+    caption: "Pure laughter that spreads good energy.",
   },
   {
-    src: pic,
-    title: "AI Art Workshop",
-    caption: "Creative exploration of AI-powered art and design.",
+    src: debate,
+    title: "Discuss.Debate.Discover",
+    caption: "A vibrant exchange of ideas and solutions.",
   },
   {
-    src: pic,
-    title: "Panel Discussion",
-    caption: "Engaging panel discussion on AI ethics and policies.",
+    src: seminar,
+    title: "Fueling minds, sparking ideas",
+    caption: "Absorbing knowledge to shape a brighter future.",
   },
+  
   {
-    src: pic,
-    title: "Gaming Arena",
-    caption: "Exciting AI-driven gaming experiences for participants.",
-  },
-  {
-    src: pic,
-    title: "Robotics Showcase",
-    caption: "Cutting-edge robotics projects on display.",
+    src: squad,
+    title: "Happiness looks good on us",
+    caption: "A squad that knows how to have a good time.",
   },
 ];
 

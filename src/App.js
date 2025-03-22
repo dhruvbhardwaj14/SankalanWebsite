@@ -14,6 +14,9 @@ import Faq from './components/Faq'
 import Sponsor from './components/Sponsor'
 import Team from './components/Team'
 import Updates from './components/Updates'
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy';
 function App() {
   const [activePath, setActivePath] = React.useState(window.location.pathname);
 
@@ -43,7 +46,10 @@ function App() {
       <Route exact path="/faq" element={<Faq />} />
       <Route exact path="/sponsors" element={<Sponsor />} />
       <Route exact path="/updates" element={<Updates />} />
+      <Route exact path="/contact" element={<ContactUs />} />
+      <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
+      <Footer/>
       </Router>
     </div>
   );
