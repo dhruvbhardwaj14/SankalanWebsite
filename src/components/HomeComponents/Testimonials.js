@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import agam from "../../assets/PNG/Agam.png"
 import Ashutosh from "../../assets/PNG/Ashutosh.png"
-import Khushi from "../../assets/PNG/Khushi.png"
 import Krishna from "../../assets/PNG/Krishna.png"
 // Event Highlights / Testimonials Data
 const eventHighlights = [

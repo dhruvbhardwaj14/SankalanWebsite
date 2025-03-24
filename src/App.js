@@ -17,6 +17,10 @@ import Updates from './components/Updates'
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import PrivacyPolicy from './components/PrivacyPolicy';
+// cursor effects
+import CursorGlow from './components/Cursor/CursorGlow'
+import CursorTrail from './components/Cursor/CursorTrail'
+import CursorParticles from './components/Cursor/CursorParticles'
 function App() {
   const [activePath, setActivePath] = React.useState(window.location.pathname);
 
@@ -35,6 +39,10 @@ function App() {
   }, [activePath]);
   return (
     <div className="App">
+      {/* Add Cursor Effects */}
+      <CursorTrail />
+      <CursorGlow />
+      <CursorParticles/>
       <Router>
       <Navbar activePath={activePath} setActivePath={handleSetActivePath} />
       <Routes>
