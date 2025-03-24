@@ -55,6 +55,16 @@
   color: #FFCC00;
 }
 
+/* Contact Sections */
+.query-section {
+  margin-bottom: 50px;
+}
+
+.query-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
 /* Contact Card Styling */
 .contact-cards {
   display: flex;

@@ -95,4 +95,95 @@
       font-size: 0.9rem;
     }
   }
-  
+  /* 💻 Responsive Design for Larger Screens */
+
+/* Screens > 1100px: 3x3 Grid */
+@media (min-width: 1100px) {
+  .masonry-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .grid-item img {
+    height: 300px;
+  }
+
+  .caption-overlay h3 {
+    font-size: 1.6rem;
+  }
+
+  .caption-overlay p {
+    font-size: 1rem;
+  }
+}
+
+/* Screens > 1500px */
+@media (min-width: 1500px) {
+  .gallery-showcase {
+    padding: 8vh 12vw;
+  }
+
+  .masonry-grid {
+    gap: 35px;
+  }
+
+  .grid-item img {
+    height: 350px;
+  }
+
+  .caption-overlay h3 {
+    font-size: 1.8rem;
+  }
+
+  .caption-overlay p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Screens > 2000px */
+@media (min-width: 2000px) {
+  .gallery-showcase {
+    padding: 10vh 14vw;
+  }
+
+  .masonry-grid {
+    gap: 40px;
+  }
+
+  .grid-item img {
+    height: 400px;
+    border-radius: 15px;
+  }
+
+  .caption-overlay h3 {
+    font-size: 2rem;
+  }
+
+  .caption-overlay p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Screens > 2800px */
+@media (min-width: 2800px) {
+  .gallery-showcase {
+    padding: 12vh 18vw;
+  }
+
+  .masonry-grid {
+    gap: 50px;
+  }
+
+  .grid-item img {
+    height: 500px;
+    border-radius: 18px;
+  }
+
+  .caption-overlay h3 {
+    font-size: 2.2rem;
+  }
+
+  .caption-overlay p {
+    font-size: 1.4rem;
+  }
+}

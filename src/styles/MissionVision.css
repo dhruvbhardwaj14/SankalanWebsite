@@ -106,4 +106,182 @@
     align-items: center;
     color: white;
   }
-  
+  /* Media Queries for Larger Screens (>1500px) */
+/* Media Queries for Large Screens (1500px - 2000px) */
+@media (min-width: 1500px) {
+  .mission-vision {
+    padding: 8vh 12vw;
+  }
+
+  .mission-vision h2 {
+    font-size: 4rem;
+  }
+
+  .flip-card {
+    width: 320px;
+    height: 340px;
+  }
+
+  .flip-card-front h3 {
+    font-size: 1.6rem;
+  }
+
+  .flip-card-back p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Media Queries for Extra Large Screens (>2000px) */
+@media (min-width: 2000px) {
+  .mission-vision h2 {
+    font-size: 4.5rem;
+  }
+
+  .flip-card {
+    width: 350px;
+    height: 360px;
+  }
+
+  .flip-card-front h3 {
+    font-size: 1.7rem;
+  }
+
+  .flip-card-back p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Media Queries for Ultra Wide Screens (>2800px) */
+@media (min-width: 2800px) {
+  .mission-vision h2 {
+    font-size: 5rem;
+  }
+
+  .flip-card {
+    width: 380px;
+    height: 400px;
+  }
+
+  .flip-card-front h3 {
+    font-size: 1.8rem;
+  }
+
+  .flip-card-back p {
+    font-size: 1.5rem;
+  }
+}
+/* Media Queries for Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .mission-vision {
+    padding: 5vh 8vw;
+  }
+
+  .mission-vision h2 {
+    font-size: 2.5rem;
+  }
+
+  .cards-container {
+    gap: 30px;
+  }
+
+  .flip-card {
+    width: 260px;
+    height: 300px;
+  }
+
+  .flip-card-front h3 {
+    font-size: 1.3rem;
+  }
+
+  .flip-card-back p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Media Queries for Mobile Devices (480px - 768px) */
+@media (max-width: 768px) {
+  .mission-vision {
+    padding: 5vh 5vw;
+  }
+
+  .mission-vision h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .cards-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .flip-card {
+    width: 100%;
+    max-width: 300px;
+    height: 280px;
+  }
+
+  .flip-card-front h3 {
+    font-size: 1.2rem;
+  }
+
+  .flip-card-back p {
+    font-size: 1rem;
+  }
+}
+
+/* Media Queries for Small Phones (320px - 480px) */
+@media (max-width: 480px) {
+  .mission-vision {
+    padding: 4vh 5vw;
+  }
+
+  .mission-vision h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .cards-container {
+    gap: 15px;
+  }
+
+  .flip-card {
+    width: 100%;
+    max-width: 250px;
+    height: 260px;
+  }
+
+  .flip-card-front h3 {
+    font-size: 1rem;
+  }
+
+  .flip-card-back p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Media Queries for Extra Small Screens (<320px) */
+@media (max-width: 320px) {
+  .mission-vision {
+    padding: 3vh 4vw;
+  }
+
+  .mission-vision h2 {
+    font-size: 1.5rem;
+  }
+
+  .flip-card {
+    width: 100%;
+    max-width: 220px;
+    height: 240px;
+  }
+
+  .flip-card-front h3 {
+    font-size: 0.9rem;
+  }
+
+  .flip-card-back p {
+    font-size: 0.8rem;
+  }
+}
+

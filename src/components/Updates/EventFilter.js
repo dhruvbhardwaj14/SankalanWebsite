@@ -24,11 +24,78 @@ const formatDate = (dateString) => {
 
   return `${day}${getDaySuffix(day)} ${month}, ${year}`;
 };
+// Get today's date without time
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+// Function to calculate event category
+function getEventCategory(eventDate) {
+  const eventDateObj = new Date(eventDate);
+  eventDateObj.setHours(0, 0, 0, 0);
+
+  if (eventDateObj.getTime() === today.getTime()) {
+    return "Ongoing";
+  } else if (eventDateObj > today) {
+    return "Upcoming";
+  } else {
+    return "Past";
+  }
+}
 const allEvents = [
-  { id: 1, title: "Hackathon 2025", category: "Upcoming", date: "2025-04-1" },
-  { id: 2, title: "AI Workshop", category: "Upcoming", date: "2025-04-20" },
-  { id: 3, title: "Coding Marathon", category: "Ongoing", date: "2025-03-25" },
-  { id: 4, title: "Web Development Bootcamp", category: "Past", date: "2025-02-15" },
+  {
+    id: 1,
+    title: "HACKDUCS",
+    category: getEventCategory("2025-04-19"),
+    date: "2025-04-19",
+  },
+  {
+    id: 2,
+    title: "BLIND CODING",
+    category: getEventCategory("2025-04-20"),
+    date: "2025-04-20",
+  },
+  {
+    id: 3,
+    title: "SQUASH THE BUGS",
+    category: getEventCategory("2025-04-20"),
+    date: "2025-04-20",
+  },
+  {
+    id: 4,
+    title: "CODE AUCTION",
+    category: getEventCategory("2025-04-20"),
+    date: "2025-04-20",
+  },
+  {
+    id: 5,
+    title: "ALGOHOLICS",
+    category: getEventCategory("2025-04-19"),
+    date: "2025-04-19",
+  },
+  {
+    id: 6,
+    title: "OVER TORQUE",
+    category: getEventCategory("2025-04-20"),
+    date: "2025-04-20",
+  },
+  {
+    id: 7,
+    title: "CHAKRAVYUH",
+    category: getEventCategory("2025-04-19"),
+    date: "2025-04-19",
+  },
+  {
+    id: 8,
+    title: "DASTUR-E-MEHFIL",
+    category: getEventCategory("2025-04-19"),
+    date: "2025-04-19",
+  },
+  {
+    id: 9,
+    title: "FEETS ON FIRE",
+    category: getEventCategory("2025-04-20"),
+    date: "2025-04-20",
+  },
 ];
 
 const categories = ["All", "Upcoming", "Ongoing", "Past"];
@@ -37,9 +104,11 @@ const EventFilter = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredEvents =
-    activeCategory === "All"
-      ? allEvents
-      : allEvents.filter((event) => event.category === activeCategory);
+  activeCategory === "All"
+    ? allEvents.sort((a, b) => new Date(a.date) - new Date(b.date))
+    : allEvents
+        .filter((event) => event.category === activeCategory)
+        .sort((a, b) => new Date(a.date) - new Date(b.date));
 
   return (
     <div className="event-filter-container">

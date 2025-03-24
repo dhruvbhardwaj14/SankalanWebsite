@@ -9,19 +9,32 @@ const HeroSection = () => {
 
   // Countdown Timer Calculation
   function calculateTimeLeft() {
-    const targetDate = new Date("2025-04-04T00:00:00"); // Event date (March 10, 2025)
+    // Corrected target date to 19th April 2025
+    const targetDate = new Date("2025-04-19T00:00:00Z"); // UTC time
     const now = new Date();
-    const difference = targetDate - now;
-
-    if (difference <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-
+  
+    // Calculate the difference in milliseconds
+    const difference = targetDate.getTime() - now.getTime();
+  
+    // If the target date has passed, return zeros
+    if (difference <= 0) {
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }
+  
+    // Calculate remaining time
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+  
     return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / 1000 / 60) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
+      days,
+      hours,
+      minutes,
+      seconds,
     };
   }
+  
 
   // Update Countdown every second
   useEffect(() => {

@@ -11,21 +11,34 @@ import { motion } from "framer-motion";
 import "../styles/ContactUs.css";
 
 const ContactUs = () => {
-  const contacts = [
+  const generalContacts = [
     {
-      name: "Gagan Kumar Soni",
-      email: "gagan.mcs22@cs.du.ac.in",
-      phone: "+91 7479993105",
+      name: "Pushpender Singh Meena",
+      email: "pushpendersmsc23@cs.du.ac.in",
+      phone: "+91 8287743327",
     },
     {
-      name: "Sudipto Ghosh",
-      email: "sudipto.mcs22@cs.du.ac.in",
-      phone: "+91 8826358310",
+      name: "Chetan Verma",
+      email:"chetanvmsc23@cs.du.ac.in",
+      phone: "+91 7878981705",
     },
     {
-      name: "Sudipto Ghosh",
-      email: "sudipto.mcs22@cs.du.ac.in",
-      phone: "+91 8826358310",
+      name: "Deepak Jangir",
+      email: "deepakjmsc24@cs.du.ac.in",
+      phone: "+91 8000595793",
+    },
+  ];
+
+  const coordinatorContacts = [
+    {
+      name: "Abhishek Mahar",
+      email: "Abhishekmmsc23@cs.du.ac.in",
+      phone: "+91 9910533912",
+    },
+    {
+      name: "Pardeep Singh",
+      email: "psingh@cs.du.ac.in",
+      phone: "+91 8278862679",
     },
   ];
 
@@ -39,7 +52,7 @@ const ContactUs = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.2, // Delay between children
+        staggerChildren: 0.2,
       },
     },
   };
@@ -56,7 +69,7 @@ const ContactUs = () => {
       animate="visible"
       variants={staggerContainer}
     >
-      {/* Main Container with Fade-in */}
+      {/* Main Container */}
       <motion.div className="contact-container" variants={fadeIn}>
         {/* Header Section */}
         <motion.div className="contact-header" variants={fadeIn}>
@@ -70,33 +83,68 @@ const ContactUs = () => {
           </p>
         </motion.div>
 
-        {/* Contact Cards */}
-        <motion.div className="contact-cards" variants={staggerContainer}>
-          {contacts.map((contact, index) => (
-            <motion.div
-              className="contact-card"
-              key={index}
-              variants={fadeIn}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 12px 24px rgba(0, 0, 0, 0.3)",
-              }}
-            >
-              <h3>{contact.name}</h3>
-              <p>
-                <FaEnvelope />{" "}
-                <a href={`mailto:${contact.email}`} className="contact-link">
-                  {contact.email}
-                </a>
-              </p>
-              <p>
-                <FaPhone />{" "}
-                <a href={`tel:${contact.phone}`} className="contact-link">
-                  {contact.phone}
-                </a>
-              </p>
-            </motion.div>
-          ))}
+        {/* General Queries Section */}
+        <motion.div className="query-section" variants={fadeIn}>
+          <h2>For General Queries</h2>
+          <motion.div className="contact-cards" variants={staggerContainer}>
+            {generalContacts.map((contact, index) => (
+              <motion.div
+                className="contact-card"
+                key={index}
+                variants={fadeIn}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 12px 24px rgba(0, 0, 0, 0.3)",
+                }}
+              >
+                <h3>{contact.name}</h3>
+                <p>
+                  <FaEnvelope />{" "}
+                  <a href={`mailto:${contact.email}`} className="contact-link">
+                    {contact.email}
+                  </a>
+                </p>
+                <p>
+                  <FaPhone />{" "}
+                  <a href={`tel:${contact.phone}`} className="contact-link">
+                    {contact.phone}
+                  </a>
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
+
+        {/* Event & PhD Coordinators Section */}
+        <motion.div className="query-section" variants={fadeIn}>
+          <h2>Event Coordinator & PhD Coordinator</h2>
+          <motion.div className="contact-cards" variants={staggerContainer}>
+            {coordinatorContacts.map((contact, index) => (
+              <motion.div
+                className="contact-card"
+                key={index}
+                variants={fadeIn}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 12px 24px rgba(0, 0, 0, 0.3)",
+                }}
+              >
+                <h3>{contact.name}</h3>
+                <p>
+                  <FaEnvelope />{" "}
+                  <a href={`mailto:${contact.email}`} className="contact-link">
+                    {contact.email}
+                  </a>
+                </p>
+                <p>
+                  <FaPhone />{" "}
+                  <a href={`tel:${contact.phone}`} className="contact-link">
+                    {contact.phone}
+                  </a>
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
         </motion.div>
 
         {/* Location Section */}

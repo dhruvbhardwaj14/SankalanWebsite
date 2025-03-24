@@ -191,9 +191,68 @@
     font-size: 1rem;
   }
 }
+/* Media Queries for Larger Screens (>1500px) */
+@media (min-width: 1500px) {
+  .about-sankalan,
+  .department-section {
+    justify-content: space-evenly!important; /* Ensure equal spacing */
+  }
+
+  .about-container,
+  .department-container {
+    max-width: 80vw!important; /* Proportional to viewport width */
+    justify-content: space-around!important;
+  }
+
+  .about-text h2,
+  .department-title {
+    font-size: 4rem!important; /* Increase heading size */
+  }
+
+  .about-text p,
+  .department-description,
+  .department-mission {
+    font-size: 1.4rem!important; /* Larger font size for content */
+    line-height: 1.6!important;
+  }
+
+  .about-illustration img,
+  .department-image img {
+    max-width: 500px!important; /* Increase image size */
+  }
+}
+
+/* Media Queries for Larger Screens (>2000px) */
+@media (min-width: 2000px) {
+  .about-text p,
+  .department-description,
+  .department-mission {
+    font-size: 1.5rem !important; /* Slightly larger font for 2000px */
+  }
+
+  .about-illustration img,
+  .department-image img {
+    max-width: 600px !important; /* Increase image size for large screens */
+  }
+}
+
+/* Media Queries for Ultra-Large Screens (>2800px) */
+@media (min-width: 2800px) {
+  .about-text p,
+  .department-description,
+  .department-mission {
+    font-size: 1.6rem !important; /* Even larger font for ultra-large screens */
+  }
+
+  .about-illustration img,
+  .department-image img {
+    max-width: 700px !important; /* Max size for ultra-large screens */
+  }
+}
+
 /* ========== Department Section ========== */
 .department-section {
-  padding: 100px 50px;
+  padding: 100px 50px ;
   background-color: #f9f9f9;
   display: flex;
   justify-content: center;
@@ -265,6 +324,7 @@
     transform: translateX(0);
   }
 }
+/* larger screen */
 
 /* Responsive for Smaller Screens */
 @media (max-width: 768px) {

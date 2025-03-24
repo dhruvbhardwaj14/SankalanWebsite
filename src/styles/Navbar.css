@@ -148,3 +148,19 @@
   background-color: white !important; /* Ensure hover effect works */
   color: #47A2DF  !important;
 }
+
+@media (min-width: 1500px) {
+  .custom-navbar .nav-link {
+    font-size: 20px; /* Extra-large screens */
+    letter-spacing: 0.18em;
+  }
+
+  .navbar-toggler {
+    width: 35px;
+    height: 35px;
+  }
+
+  .navbar-toggler .toggler-icon {
+    height: 4.5px;
+  }
+}

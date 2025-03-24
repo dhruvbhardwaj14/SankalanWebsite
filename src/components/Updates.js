@@ -10,30 +10,30 @@ import NotificationCard from "./Updates/NotificationCard.js";
 const Updates = () => {
   // Initial Notification Data
   const initialNotifications = [
-    {
-      title: "Hackathon Registration Open!",
-      message:
-        "Registrations for the Hackathon 2025 are now open. Hurry up and secure your spot before the deadline!",
-      date: "March 25, 2025",
-    },
-    {
-      title: "AI/ML Workshop Registration Open!",
-      message:
-        "Join us for an in-depth workshop on Artificial Intelligence and Machine Learning. Limited seats available!",
-      date: "April 10, 2025",
-    },
-    {
-      title: "Exclusive Guest Lecture by Industry Expert",
-      message:
-        "Don't miss the opportunity to attend a guest lecture by a leading AI researcher from Google. Register now!",
-      date: "April 20, 2025",
-    },
-    {
-      title: "CodeRush 2025 is Here!",
-      message:
-        "Gear up for the ultimate coding showdown! Participate in CodeRush and win exciting prizes.",
-      date: "April 15, 2025",
-    },
+    // {
+    //   title: "Hackathon Registration Open!",
+    //   message:
+    //     "Registrations for the Hackathon 2025 are now open. Hurry up and secure your spot before the deadline!",
+    //   date: "March 25, 2025",
+    // },
+    // {
+    //   title: "AI/ML Workshop Registration Open!",
+    //   message:
+    //     "Join us for an in-depth workshop on Artificial Intelligence and Machine Learning. Limited seats available!",
+    //   date: "April 10, 2025",
+    // },
+    // {
+    //   title: "Exclusive Guest Lecture by Industry Expert",
+    //   message:
+    //     "Don't miss the opportunity to attend a guest lecture by a leading AI researcher from Google. Register now!",
+    //   date: "April 20, 2025",
+    // },
+    // {
+    //   title: "CodeRush 2025 is Here!",
+    //   message:
+    //     "Gear up for the ultimate coding showdown! Participate in CodeRush and win exciting prizes.",
+    //   date: "April 15, 2025",
+    // },
   ];
 
   // State for Notifications

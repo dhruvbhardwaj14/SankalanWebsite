@@ -1,7 +1,14 @@
 {
-  "name": "sankalan-app",
-  "version": "0.1.0",
+  "name": "sankalan-2025",
+  "version": "1.0.0",
   "private": true,
+  "description": "Sankalan 2025 - Annual Tech Fest by the Department of Computer Science, University of Delhi. Explore AI, Big Data, and cutting-edge technology.",
+  "author": "Delhi University Computer Science Society",
+  "homepage": "https://sankalan.cs.du.ac.in/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DUCS-Sankalan/sankalan-2025.git"
+  },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",

@@ -8,7 +8,7 @@ const AccordianItem = ({ question, answer }) => {
   // Function to convert specific keywords to links
   const highlightLinks = (text) => {
     const linkMappings = {
-      About: "/about",
+      About: "/",
       Events: "/events",
       "Contact Us": "/contact",
     };
@@ -37,18 +37,10 @@ const AccordianItem = ({ question, answer }) => {
     <div className="accordion-item">
       {/* Accordion Header */}
       <button
-        className="accordion-header"
+        className={`accordion-header ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span
-          style={{
-            fontFamily: "Montserrat",
-            fontWeight: "bold",
-            fontSize: "18px",
-          }}
-        >
-          {question.toUpperCase()}
-        </span>
+        <span className="accordion-title">{question.toUpperCase()}</span>
         <span className={`icon ${isOpen ? "rotate" : ""}`}>
           {isOpen ? "−" : "+"}
         </span>
@@ -58,18 +50,9 @@ const AccordianItem = ({ question, answer }) => {
       <div
         ref={contentRef}
         className={`accordion-body ${isOpen ? "open" : ""}`}
-        style={{
-          overflow: "hidden",
-          transition: "max-height 0.3s ease-out",
-        }}
       >
         <p
-          style={{
-            fontFamily: "Montserrat",
-            fontSize: "16px",
-            fontStyle: "italic",
-            margin: "10px 0",
-          }}
+          className="accordion-content"
           dangerouslySetInnerHTML={{
             __html: highlightLinks(answer),
           }}
