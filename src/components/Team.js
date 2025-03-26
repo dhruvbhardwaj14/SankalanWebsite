@@ -215,7 +215,7 @@ const teamMembers = {
     github: "https://github.com/pratibhasc",
   },
   {
-    name: "Pushpender Singh Meena",
+    name: "Abhishek Singh Yadav",
     role: "Organising Committee",
     img: pushpender,
     linkedin: "#",
@@ -252,12 +252,20 @@ const teamMembers = {
     linkedin: "https://bit.ly/41WTyyZ",
     email: "abhishekmmsc23@cs.du.ac.in",
   },
+  
   {
     name: "Pardeep Singh",
     role: "PHD Coordinator, DUCSS",
     img: pardeep,
     linkedin: "https://bit.ly/4ixKS9g",
     email: "psingh@cs.du.ac.in",
+  },
+  {
+    name: "Pushpender Singh Meena",
+    role: "Co-Coordinator, DUCSS",
+    img: pushpender,
+    linkedin: "#",
+    email: "pushpendersmsc23@cs.du.ac.in",
   },
   {
     name: "Deepak Jangir",
