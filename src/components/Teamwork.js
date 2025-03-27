@@ -5,23 +5,23 @@ import { faChevronUp, faChevronDown, faUsers, faEnvelopeOpen } from "@fortawesom
 import "../styles/Team.css";
 
 // Import Images - Replace with actual import paths
-import krishnaK from "../assets/PNG/krishnaK.png";
-import vaniT from "../assets/PNG/vaniT.png";
-import girishG from "../assets/PNG/girishG.png";
-import nasreenP from "../assets/PNG/nasreenP.png";
-import sankalpT from "../assets/PNG/sankalpT.png";
-import mayankS from "../assets/PNG/mayankS.png";
-import yashD from "../assets/PNG/yashD.png";
-import amitK from "../assets/PNG/amitK.png";
-import pratibhaS from "../assets/PNG/pratibhaS.png";
-import ashutoshP from "../assets/PNG/ashutoshP.png";
-import nikitaS from "../assets/PNG/nikitaS.png";
-import varshaS from "../assets/PNG/varshaS.png";
-import aditiS from "../assets/PNG/aditiS.png";
-import prachiB from "../assets/PNG/prachiB.png";
-import deepakG from "../assets/PNG/deepakG.png";
-import aryanT from "../assets/PNG/aryanT.png";
-import nishantS from "../assets/PNG/nishantS.png";
+import krishnaK from "../assets/PNG/krishnaK.webp";
+import vaniT from "../assets/PNG/vaniT.webp";
+import girishG from "../assets/PNG/girishG.webp";
+import nasreenP from "../assets/PNG/nasreenP.webp";
+import sankalpT from "../assets/PNG/sankalpT.webp";
+import mayankS from "../assets/PNG/mayankS.webp";
+import yashD from "../assets/PNG/yashD.webp";
+import amitK from "../assets/PNG/amitK.webp";
+import pratibhaS from "../assets/PNG/pratibhaS.webp";
+import ashutoshP from "../assets/PNG/ashutoshP.webp";
+import nikitaS from "../assets/PNG/nikitaS.webp";
+import varshaS from "../assets/PNG/varshaS.webp";
+import aditiS from "../assets/PNG/aditiS.webp";
+import prachiB from "../assets/PNG/prachiB.webp";
+import deepakG from "../assets/PNG/deepakG.webp";
+import aryanT from "../assets/PNG/aryanT.webp";
+import nishantS from "../assets/PNG/nishantS.webp";
 
 // Updated Categories
 const teamCategories = ["Team/Event Heads"];

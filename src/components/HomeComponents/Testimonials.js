@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import "../../styles/Testimonials.css";
-import agam from "../../assets/PNG/Agam.png";
-import Ashutosh from "../../assets/PNG/Ashutosh.png";
-import Krishna from "../../assets/PNG/Krishna.png";
-import Khushi from "../../assets/PNG/Khushi.png";
-import saransh from "../../assets/PNG/saransh.png";
+import agam from "../../assets/PNG/Agam.webp";
+import Ashutosh from "../../assets/PNG/Ashutosh.webp";
+import Krishna from "../../assets/PNG/Krishna.webp";
+import Khushi from "../../assets/PNG/Khushi.webp";
+import saransh from "../../assets/PNG/saransh.webp";
 
 // Event Highlights / Testimonials Data
 const eventHighlights = [
