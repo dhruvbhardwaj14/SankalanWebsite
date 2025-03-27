@@ -33,6 +33,8 @@ import chetan from "../assets/PNG/chetan.png"
 import pushpender from "../assets/PNG/pushpender.png"
 import rohan from '../assets/PNG/rohan.png'
 import harshY from "../assets/PNG/harshY.png"
+import abhishekS from "../assets/PNG/abhishekS.png"
+import vinayakB from "../assets/PNG/vinayakB.png"
 // Admin and DUCSS panel
 import abhishek from "../assets/PNG/abhishek.png"
 import ompal from "../assets/PNG/ompal.png"
@@ -217,9 +219,9 @@ const teamMembers = {
   {
     name: "Abhishek Singh Yadav",
     role: "Organising Committee",
-    img: pushpender,
-    linkedin: "#",
-    email: "pushpendersmsc23@cs.du.ac.in",
+    img: abhishekS,
+    linkedin: "https://www.linkedin.com/in/abhishek-singh-yadav-70724a203",
+    email: "abhisheksmsc23@cs.du.ac.in",
   },
   {
     name: "Harsh Yadav",
@@ -235,6 +237,14 @@ const teamMembers = {
     linkedin: "https://www.linkedin.com/in/rohankumar141414/",
     email: "rohankmsc23@cs.du.ac.in",
   },
+  {
+    name: "Vinayak Bansal",
+    role: "Organising Committee",
+    img: vinayakB,
+    linkedin: "https://www.linkedin.com/in/procodomatic-vinayak-bansal/",
+    email: "vinayakbmsc23@cs.du.ac.in",
+  },
+
 ],
 
   "Administrative and DUCSS Panel": [
