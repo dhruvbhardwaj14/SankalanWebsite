@@ -5,10 +5,10 @@ import WhySankalan from "./HomeComponents/WhySankalan.js";
 import EventTimeline from "./HomeComponents/EventTimeline.js";
 import Testimonials from "./HomeComponents/Testimonials.js";
 import GalleryShowcase from "./HomeComponents/GalleryShowcase.js";
-import DepartmentImg from "../assets/PNG/DepartmentImg.png";
+import DepartmentImg from "../assets/PNG/DepartmentImg.webp";
 import { motion } from "framer-motion";
 import "../styles/Components.css";
-import sankalanIllustration from "../assets/PNG/SankalanMain.png"
+import sankalanIllustration from "../assets/PNG/SankalanMain.webp"
 // Animation Variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },

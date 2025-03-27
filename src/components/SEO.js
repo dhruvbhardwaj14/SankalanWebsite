@@ -14,7 +14,7 @@ const SEO = ({ title, description, image, url }) => {
       />
       <meta property="og:title" content={title || "Sankalan 2025"} />
       <meta property="og:description" content={description || "Sankalan 2025"} />
-      <meta property="og:image" content={image || "%PUBLIC_URL%/sankalan-og-image.png"} />
+      <meta property="og:image" content={image || "%PUBLIC_URL%/sankalan-og-image.webp"} />
       <meta property="og:url" content={url || "https://sankalan.cs.du.ac.in"} />
       <meta name="twitter:card" content="summary_large_image" />
     </Helmet>

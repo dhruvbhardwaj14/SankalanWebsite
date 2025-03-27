@@ -3,15 +3,15 @@ import { FaBullhorn } from "react-icons/fa";
 import "../styles/Components.css";
 import EventCard from "./EventCard.js";
 
-import hack from "../assets/PNG/hack.png"
-import robo from "../assets/PNG/robo.png"
-import algo from "../assets/PNG/alogholics.png"
-import blind from "../assets/PNG/blind.png"
-import chakra from "../assets/PNG/chakra.png"
-import auction from "../assets/PNG/auction.png"
-import feet from "../assets/PNG/feet.png"
-import bugs from "../assets/PNG/bugs.png"
-import dastur from "../assets/PNG/dastur.png"
+import hack from "../assets/PNG/hack.webp"
+import robo from "../assets/PNG/robo.webp"
+import algo from "../assets/PNG/alogholics.webp"
+import blind from "../assets/PNG/blind.webp"
+import chakra from "../assets/PNG/chakra.webp"
+import auction from "../assets/PNG/auction.webp"
+import feet from "../assets/PNG/feet.webp"
+import bugs from "../assets/PNG/bugs.webp"
+import dastur from "../assets/PNG/dastur.webp"
 const technicalEvents = [
   {
     id: 1,

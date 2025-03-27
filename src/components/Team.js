@@ -5,41 +5,41 @@ import { faChevronUp, faChevronDown, faUsers, faEnvelope } from "@fortawesome/fr
 import "../styles/Team.css";
 
 // Team leads and event heads
-import dhruvB from "../assets/PNG/dhruvB.png"
-import krishnaK from "../assets/PNG/krishnaK.png";
-import vaniT from "../assets/PNG/vaniT.png";
-import girishG from "../assets/PNG/girishG.png";
-import nasreenP from "../assets/PNG/nasreenP.png";
-import sankalpT from "../assets/PNG/sankalpT.png";
-import mayankS from "../assets/PNG/mayankS.png";
-import yashD from "../assets/PNG/yashD.png";
-import amitK from "../assets/PNG/amitK.png";
-import pratibhaS from "../assets/PNG/pratibhaS.png";
-import ashutoshP from "../assets/PNG/ashutoshP.png";
-import nikitaS from "../assets/PNG/nikitaS.png";
-import varshaS from "../assets/PNG/varshaS.png";
-import aditiS from "../assets/PNG/aditiS.png";
-import prachiB from "../assets/PNG/prachiB.png";
-import deepakG from "../assets/PNG/deepakG.png";
-import aryanT from "../assets/PNG/aryanT.png";
-import nishantS from "../assets/PNG/nishantS.png";
-import harshaV from "../assets/PNG/harshaV.png"
-import deepakS from "../assets/PNG/deepakS.png"
-import shivamY from "../assets/PNG/shivamY.png"
-import sandeep from "../assets/PNG/sandeep.png"
+import dhruvB from "../assets/PNG/dhruvB.webp"
+import krishnaK from "../assets/PNG/krishnaK.webp";
+import vaniT from "../assets/PNG/vaniT.webp";
+import girishG from "../assets/PNG/girishG.webp";
+import nasreenP from "../assets/PNG/nasreenP.webp";
+import sankalpT from "../assets/PNG/sankalpT.webp";
+import mayankS from "../assets/PNG/mayankS.webp";
+import yashD from "../assets/PNG/yashD.webp";
+import amitK from "../assets/PNG/amitK.webp";
+import pratibhaS from "../assets/PNG/pratibhaS.webp";
+import ashutoshP from "../assets/PNG/ashutoshP.webp";
+import nikitaS from "../assets/PNG/nikitaS.webp";
+import varshaS from "../assets/PNG/varshaS.webp";
+import aditiS from "../assets/PNG/aditiS.webp";
+import prachiB from "../assets/PNG/prachiB.webp";
+import deepakG from "../assets/PNG/deepakG.webp";
+import aryanT from "../assets/PNG/aryanT.webp";
+import nishantS from "../assets/PNG/nishantS.webp";
+import harshaV from "../assets/PNG/harshaV.webp"
+import deepakS from "../assets/PNG/deepakS.webp"
+import shivamY from "../assets/PNG/shivamY.webp"
+import sandeep from "../assets/PNG/sandeep.webp"
 // Organising Committe
-import gajender from "../assets/PNG/gajender.png"
-import chetan from "../assets/PNG/chetan.png"
-import pushpender from "../assets/PNG/pushpender.png"
-import rohan from '../assets/PNG/rohan.png'
-import harshY from "../assets/PNG/harshY.png"
-import abhishekS from "../assets/PNG/abhishekS.png"
-import vinayakB from "../assets/PNG/vinayakB.png"
+import gajender from "../assets/PNG/gajender.webp"
+import chetan from "../assets/PNG/chetan.webp"
+import pushpender from "../assets/PNG/pushpender.webp"
+import rohan from '../assets/PNG/rohan.webp'
+import harshY from "../assets/PNG/harshY.webp"
+import abhishekS from "../assets/PNG/abhishekS.webp"
+import vinayakB from "../assets/PNG/vinayakB.webp"
 // Admin and DUCSS panel
-import abhishek from "../assets/PNG/abhishek.png"
-import ompal from "../assets/PNG/ompal.png"
-import deepakJ from "../assets/PNG/deepakJ.png"
-import pardeep from "../assets/PNG/pardeep.png"
+import abhishek from "../assets/PNG/abhishek.webp"
+import ompal from "../assets/PNG/ompal.webp"
+import deepakJ from "../assets/PNG/deepakJ.webp"
+import pardeep from "../assets/PNG/pardeep.webp"
 const teamCategories = ["Team/Event Heads", "Organising Committee", "Administrative and DUCSS Panel"];
 
 const teamMembers = {
