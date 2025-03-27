@@ -135,11 +135,11 @@ const PrivacyPolicy = () => {
                   You are free to review the source code available at:
                   <br />
                   <a
-                    href="https://github.com/csdu/sankalan"
+                    href="https://github.com/dhruvbhardwaj14/SankalanWebsite/tree/frontend_team"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://github.com/csdu/sankalan
+                    Sankalan Website 
                   </a>
                 </li>
               </ul>
@@ -194,7 +194,7 @@ const PrivacyPolicy = () => {
               </p>
               <p>
                 <strong>Email:</strong>{" "}
-                <a href="mailto:support@sankalan.in">support@sankalan.in</a>
+                <a href="mailto:support@ducss.tech">support@ducss.tech</a>
               </p>
               <p>
                 <strong>Address:</strong> Department of Computer Science, University of

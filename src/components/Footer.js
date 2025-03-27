@@ -24,7 +24,7 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="footer-copyright">
           <p>COPYRIGHT © SANKALAN 2025</p>
-          <p>Delhi University Computer Science Society</p>
+          <p>Department of Computer Science Society</p>
         </div>
 
         {/* Social Media Icons */}

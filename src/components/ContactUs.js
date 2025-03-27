@@ -76,8 +76,8 @@ const ContactUs = () => {
           <h1>Contact Us</h1>
           <p>
             For any queries, please mail us at{" "}
-            <a href="mailto:ducss@cs.du.ac.in" className="contact-email">
-              ducss@cs.du.ac.in
+            <a href="mailto:support@ducss.tech" className="contact-email">
+              support@ducss.tech
             </a>{" "}
             or contact any of the following representatives:
           </p>

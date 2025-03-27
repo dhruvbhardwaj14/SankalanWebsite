@@ -59,7 +59,7 @@ const Home = () => {
       a wide array of both <strong>technical</strong> and <strong>non-technical events</strong>. It provides an 
       exceptional opportunity for participants from across the country to demonstrate their 
       <strong>skills</strong> and <strong>creativity</strong>, making it a highly anticipated gathering for 
-      <strong>tech enthusiasts</strong> and <strong>professionals</strong> alike.
+      <strong> tech enthusiasts</strong> and <strong>professionals</strong> alike.
     </p>
 
     </motion.div>
@@ -88,18 +88,13 @@ const Home = () => {
           <div className="department-text">
             <h2 className="department-title">About Department of Computer Science</h2>
             <p className="department-description" style={{textAlign:"justify"}}>
-            The <strong>Delhi University Computer Science Society (DUCSS)</strong> is proud to represent the 
+            The <strong>Department of Computer Science Society (DUCSS)</strong> is proud to represent the 
             <strong> Department of Computer Science</strong> at the University of Delhi. We are committed to 
             encouraging <strong>innovation</strong> and <strong>research</strong>, providing students with valuable 
             opportunities for <strong>skill development</strong> and <strong>collaboration</strong>. Our engaging 
             technical events create remarkable avenues for <strong>personal</strong> and <strong>professional growth</strong>. 
             The annual technical fest, <strong>Sankalan</strong>, brings together tech enthusiasts and talented 
             individuals from esteemed institutions across the country.
-            </p>
-
-            <p className="department-mission">
-              Our mission is to foster innovation, critical thinking, and technological expertise while contributing to the ever-growing
-              field of Computer Science.
             </p>
           </div>
           <div className="department-image">
