@@ -3,7 +3,11 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import "../../styles/HeroSection.css";
-import videoBg from "../../assets/Videos/sankalanBg.mp4"
+import videoBgMP4 from "../../assets/Videos/sankalanBg_optimized.mp4";
+import videoBgWebM from "../../assets/Videos/sankalanBg.webm";
+import videoBg480p from "../../assets/Videos/sankalanBg_480p.mp4";
+import videoBg360p from "../../assets/Videos/sankalanBg_360p.mp4";
+import posterImg from "../../assets/Videos/sankalanPoster.png";
 const HeroSection = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -49,14 +53,21 @@ const HeroSection = () => {
     <div className="hero-container">
       {/* Video Background with Fallback */}
       <div className="video-overlay"></div>
+
+      {/* Video with Multiple Sources and Poster */}
       <video
         className="video-bg"
         autoPlay
         loop
         muted
         playsInline
+        poster={posterImg}
+        preload="auto"
       >
-        <source src={videoBg} type="video/mp4" />
+        <source src={videoBgWebM} type="video/webm" />
+        <source src={videoBgMP4} type="video/mp4" media="(min-width: 1024px)" />
+        <source src={videoBg480p} type="video/mp4" media="(max-width: 1023px)" />
+        <source src={videoBg360p} type="video/mp4" media="(max-width: 768px)" />
         Your browser does not support the video tag.
       </video>
 
