@@ -61,9 +61,16 @@ const EventModal = ({ event, closeModal }) => {
           </div>
 
           {/* Register Button */}
-          <button className="register-btn modal-register-btn">
-            Register Now
-          </button>
+          <button
+          className="register-btn modal-register-btn"
+          onClick={(e) => {
+            e.stopPropagation(); // Prevent modal from opening on button click
+            window.open(event.link, "_blank", "noopener,noreferrer"); // Open event link in new tab
+          }}
+        >
+          Register Now
+        </button>
+
         </div>
       </div>
     </div>

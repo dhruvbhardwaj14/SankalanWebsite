@@ -32,7 +32,15 @@ const EventCard = ({ event }) => {
             {event.date} | {event.time}
           </p>
         </div>
-        <button className="register-btn">Register Now</button>
+        <button
+        className="register-btn"
+        onClick={(e) => {
+          e.stopPropagation(); // Prevent modal from opening when clicking the button
+          window.open(event.link, "_blank"); // Open link in a new tab
+        }}
+      >
+        Register Now
+      </button>
       </div>
 
       {/* Event Modal - Opens on Card Click */}

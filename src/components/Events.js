@@ -43,6 +43,7 @@ const technicalEvents = [
       "Qualified teams must arrange for travel and accommodation.",  
       "Food and beverages will be provided as part of the parent event."
     ],
+    link:"#"
   },
   {
     id: 2,
@@ -69,6 +70,7 @@ const technicalEvents = [
       "Decisions made by the event organizers will be final and binding.",
 
     ],
+    link:"#"
   },
   {
     id: 3,
@@ -87,6 +89,7 @@ const technicalEvents = [
     "Winners will be selected based on the number of errors debugged and on the time constraints.",  
     "Decisions made by the event organizers will be final and binding."
     ],
+    link:"https://unstop.com/p/squash-the-bug-sankalan-2025-department-of-computer-science-university-of-delhi-1448179?utm_campaign=site-emails&utm_medium=d2c-automated&utm_source=you-did-it-invite-only-mode-activated-for-squash-the-bug"
   },
   {
     id: 4,
@@ -110,6 +113,7 @@ const technicalEvents = [
       "The coding round will be evaluated based on accuracy and completion time.",
       "The top 3 teams will be awarded prizes based on their performance."
     ],
+    link:"#"
   },
   {
     id: 5,
@@ -133,6 +137,7 @@ const technicalEvents = [
       "No participant is allowed to use any LLM model like chatgpt, claude sonnet, deepseek, etc. However participants can use google or other sites to check for syntax and other related things",
       "Participants indulging in unfair practices shall be immediately debarred from the contest, and the decision of the organizing committee will be final.",
     ],
+    link:"https://unstop.com/hackathons/algoholics-sankalan-2025-university-of-delhi-du-new-delhi-1447611"
   },
   {
     id: 6,
@@ -175,7 +180,8 @@ const technicalEvents = [
         "The organizing committee is not responsible for any damage to bots on or off the track.",
         "Participants must not make assumptions not mentioned in the document without clarifying with the organizers.",
         "Violation of rules or misconduct will result in disqualification."
-      ]
+      ],
+      link:"https://unstop.com/competitions/sankalan-2025-over-torque-robo-race-event-department-of-computer-science-university-of-delhi-1434621?lb=cdGChHz&utm_medium=Share&utm_source=shortUrl"
   },
 ];
 
@@ -195,6 +201,7 @@ const nonTechnicalEvents = [
     rules: [
       "There's only one rule: be the first team to find all the clues and claim victory!",
     ],
+    link:"https://unstop.com/p/chakravyuh-treasure-hunt-sankalan-2025-department-of-computer-science-delhi-university-1447733?lb=2ANUz9oo&utm_medium=Share&utm_source=shortUrl"
   },
   {
     id: 8,
@@ -222,6 +229,7 @@ const nonTechnicalEvents = [
         "Code of Conduct: The content must not be offensive towards any religion, caste, gender, or community. Any entry that violates this rule will be immediately disqualified.",
         "Participants must maintain a respectful and inclusive environment."
       ],
+      link:"https://unstop.com/p/dastur-e-mehfil-department-of-computer-science-university-of-delhi-1447624?lb=NgN1vT0Y&utm_medium=Share&utm_source=shortUrl"
   },
   {
     id: 9,
@@ -248,6 +256,7 @@ const nonTechnicalEvents = [
       "Participants are required to share their account details through a form for transfer of prize money to winners.",  
       "One member from each team needs to register themselves representing the whole team."
     ],
+    link:"https://docs.google.com/forms/d/e/1FAIpQLSext6l_qGW_Y-lyUo8swQ5VtBtzNfQbiyN69sNdLDw4jptDGg/viewform?usp=sharing"
   },
 ];
 
