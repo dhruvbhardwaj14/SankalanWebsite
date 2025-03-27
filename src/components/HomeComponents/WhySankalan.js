@@ -1,9 +1,9 @@
 import React from "react";
 import "../../styles/WhySankalan.css";
-import comp from "../../assets/PNG/competitiveCoding.webp"
-import net from "../../assets/PNG/networking.webp"
-import workshop from "../../assets/PNG/workshop.webp"
-import explore from "../../assets/PNG/explore.webp"
+import comp from "../../assets/PNG/competitiveCoding.png"
+import net from "../../assets/PNG/networking.png"
+import workshop from "../../assets/PNG/workshop.png"
+import explore from "../../assets/PNG/explore.png"
 const uspData = [
   {
     img: comp,

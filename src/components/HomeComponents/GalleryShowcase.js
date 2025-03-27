@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "../../styles/GalleryShowcase.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import seminar from "../../assets/PNG/seminar.webp"
-import dance from "../../assets/PNG/dance.webp"
-import host from "../../assets/PNG/host.webp"
-import debate from "../../assets/PNG/debate.webp"
-import laugh from "../../assets/PNG/laugh.webp"
-import squad from "../../assets/PNG/squad.webp"
+import seminar from "../../assets/PNG/seminar.png"
+import dance from "../../assets/PNG/dance.png"
+import host from "../../assets/PNG/host.png"
+import debate from "../../assets/PNG/debate.png"
+import laugh from "../../assets/PNG/laugh.png"
+import squad from "../../assets/PNG/squad.png"
 // Gallery Data
 const galleryItems = [
   {

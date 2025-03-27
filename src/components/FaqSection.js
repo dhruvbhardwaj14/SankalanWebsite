@@ -60,7 +60,7 @@ const FaqSection = () => {
           height: 100vh;
         }
         .Parallax {
-          background-image: url("../assets/PNG/backgroundOthers.webp");
+          background-image: url("../assets/PNG/backgroundOthers.png");
           background-color: #1c254c;
           background-size: cover;
           background-position: center;

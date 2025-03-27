@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/MissionVision.css";
-import vision from "../../assets/PNG/vision.webp"
-import mission from "../../assets/PNG/mission.webp"
+import vision from "../../assets/PNG/vision.png"
+import mission from "../../assets/PNG/mission.png"
 import waveVideo from "../../assets/Videos/visionMissionBg.mp4"
 const MissionVision = () => {
   console.log(waveVideo);

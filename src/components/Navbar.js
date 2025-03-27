@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link} from 'react-router-dom';
 import '../styles/Navbar.css';
-import logo from '../assets/PNG/SankalanLogo.webp';
+import logo from '../assets/PNG/SankalanLogo.png';
 
 export default class Navbar extends Component {
   constructor(props) {
