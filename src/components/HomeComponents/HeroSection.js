@@ -65,6 +65,9 @@ const HeroSection = () => {
         preload="auto"
       >
         <source src={videoBgWebM} type="video/webm" />
+        <source src={videoBgMP4} type="video/mp4" media="(min-width: 1024px)" />
+        <source src={videoBg480p} type="video/mp4" media="(max-width: 1023px)" />
+        <source src={videoBg360p} type="video/mp4" media="(max-width: 768px)" />
         Your browser does not support the video tag.
       </video>
 
