@@ -7,7 +7,7 @@ import videoBgMP4 from "../../assets/Videos/sankalanBg_optimized.mp4";
 import videoBgWebM from "../../assets/Videos/sankalanBg.webm";
 import videoBg480p from "../../assets/Videos/sankalanBg_480p.mp4";
 import videoBg360p from "../../assets/Videos/sankalanBg_360p.mp4";
-import posterImg from "../../assets/Videos/sankalanPoster.webp";
+import posterImg from "../../assets/Videos/sankalanPoster.png";
 const HeroSection = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
