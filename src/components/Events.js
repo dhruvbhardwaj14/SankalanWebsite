@@ -113,7 +113,7 @@ const technicalEvents = [
       "The coding round will be evaluated based on accuracy and completion time.",
       "The top 3 teams will be awarded prizes based on their performance."
     ],
-    link:"#"
+    link:"https://unstop.com/o/dwxZBQ5?lb=QLnSp0WV&utm_medium=Share&utm_source=shortUrl"
   },
   {
     id: 5,
