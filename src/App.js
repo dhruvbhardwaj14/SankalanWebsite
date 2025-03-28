@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -59,6 +60,7 @@ function App() {
       </Routes>
       <Footer/>
       </Router>
+      <SpeedInsights/>
     </div>
   );
 }
