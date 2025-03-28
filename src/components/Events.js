@@ -20,7 +20,7 @@ const technicalEvents = [
     longDescription:
       "Embark on a coding odyssey at HackDUCS – Delhi University's epic hackathon where ideas evolve, friendships form, and innovation takes centre stage! Department of Computer Science, University of Delhi is organizing HackDUCS, a hybrid inter-university hackathon as part of its 21th Annual TechFest - Sankalan 2025 with a prize pool of more than ₹1,50,000!",
     date: "April 19, 2025",
-    time: "TBA",
+    time: "10:00 AM",
     tag: "Technical",
     image:
       hack,
@@ -51,7 +51,7 @@ const technicalEvents = [
     description: "🔐 Think you can code without seeing the screen?",
     longDescription:`Prepare for an electrifying challenge where your coding prowess is pushed beyond limits. In this mind-bending competition, you'll tackle coding problems—but with a twist. Your code remains invisible, hidden from your screen, leaving you to rely solely on logic, memory, and pure problem-solving skills.Can you conquer the chaos, navigate the unseen, and emerge as the ultimate Blind Code Champion?`,
     date: "April 20, 2025",
-    time: "TBA",
+    time: "1:30 PM",
     tag: "Technical",
     image:
       blind,
@@ -79,7 +79,7 @@ const technicalEvents = [
     longDescription:
       "Get ready for an intense debugging challenge where your problem-solving skills will be put to the test! In this competition, you'll be given faulty code snippets, and your task is to analyze, identify, and fix the bugs within the given time. Accuracy, efficiency, and speed will determine who emerges as the ultimate Bug Squasher!",
     date: "April 20, 2025",
-    time: "TBA",
+    time: "3:30 PM",
     tag: "Technical",
     image:bugs,
     rules: [
@@ -98,7 +98,7 @@ const technicalEvents = [
     longDescription:
       "Code Auction is a unique and exciting technical event that combines strategic bidding with competitive coding, where teams must bid on coding questions within a fixed budget before solving them to secure a top position. It offers participants the opportunity to showcase their coding skills while employing tactical decision-making through an auction system.The event aims to test participants' coding proficiency and their ability to make strategic bids to maximize their success.",
     date: "April 20, 2025",
-    time: "TBA",
+    time: "10:30 AM",
     tag: "Technical",
     image:
       auction,
@@ -128,7 +128,7 @@ const technicalEvents = [
       💰 Bragging rights, algorithmic glory, and cool cash prizes are on the line. Do you have what it takes?
       🚀 Code. Compete. Conquer. 🚀`,
     date: "April 19, 2025",
-    time: "TBA",
+    time: "12 NOON",
     tag: "Technical",
     image:algo,
     rules: [
@@ -145,8 +145,8 @@ const technicalEvents = [
     description: "🤖🔥 Think your bot has got the heat? 💥🏆",
     longDescription:
       "Robo Race is an electrifying event where participants design, build, and control wireless robots to navigate a track filled with challenging obstacles. Teams will battle against the clock to complete the track while maintaining precision and avoiding penalties. Bots must pass through all checkpoints in the correct order and adhere to event specifications. The fastest team to complete the track while following all rules emerges victorious!",
-    date: "April 20, 2025",
-    time: "TBA",
+    date: "April 19, 2025",
+    time: "10:30 AM",
     tag: "Non-Technical",
     image:
       robo,
@@ -194,7 +194,7 @@ const nonTechnicalEvents = [
     longDescription:
       "Chakravyuh is a thrilling campus-wide treasure hunt that tests participants' problem-solving skills. Teams decipher cryptic clues and uncover hidden treasures in this high-energy adventure.",
     date: "April 19, 2025",
-    time: "TBA",
+    time: "12 NOON",
     tag: "Non-Technical",
     image:
       chakra,
@@ -213,7 +213,7 @@ const nonTechnicalEvents = [
       The competition consists of two rounds: a preliminary selection and a live performance. Aspiring poets will first submit their pieces online, and the most impactful submissions will be chosen for the final round. In the grand finale, selected poets will perform their pieces live before a panel of esteemed judges and an engaged audience.
       Participants can choose to present their poetry in either Hindi or English, and the winners will be decided regardless of the language based on the overall performance scores provided by the judges.`,
     date: "April 19, 2025",
-    time: "TBA",
+    time: "1:30 PM",
     tag: "Non-Technical",
     image:
       dastur,
@@ -229,7 +229,7 @@ const nonTechnicalEvents = [
         "Code of Conduct: The content must not be offensive towards any religion, caste, gender, or community. Any entry that violates this rule will be immediately disqualified.",
         "Participants must maintain a respectful and inclusive environment."
       ],
-      link:"https://unstop.com/p/dastur-e-mehfil-department-of-computer-science-university-of-delhi-1447624?lb=NgN1vT0Y&utm_medium=Share&utm_source=shortUrl"
+      link:"https://forms.gle/ZehczBYJdvvnENYSA"
   },
   {
     id: 9,
@@ -238,7 +238,7 @@ const nonTechnicalEvents = [
     longDescription:
       "Join us for an electrifying Group Dance Competition where rhythm meets passion! Witness teams set the fire with their synchronized moves, dynamic formations and captivating performances. This is your chance to experience the energy, creativity and teamwork of talented dancers as they compete for the top spot. “Get ready to groove ,cheer and be amazed!",
     date: "April 20, 2025",
-    time: "TBA",
+    time: "5:30 PM",
     tag: "Non-Technical",
     image:feet,
     rules: [
@@ -266,6 +266,13 @@ const nonTechnicalEvents = [
 const Events = () => {
   const [category, setCategory] = useState("technical");
   const events = category === "technical" ? technicalEvents : nonTechnicalEvents;
+
+  // ✅ Sort events based on date and time
+  const sortedEvents = [...events].sort((a, b) => {
+    const dateTimeA = new Date(`${a.date} ${a.time}`);
+    const dateTimeB = new Date(`${b.date} ${b.time}`);
+    return dateTimeA - dateTimeB; // Ascending order
+  });
 
   return (
     <div className="mainPage">
@@ -297,7 +304,7 @@ const Events = () => {
 
           {/* Event List */}
           <div className="event-list">
-            {events.map((event) => (
+            {sortedEvents.map((event) => (
               <EventCard key={event.id} event={event} />
             ))}
           </div>

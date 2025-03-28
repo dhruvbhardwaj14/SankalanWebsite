@@ -1,12 +1,45 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/Countdown.css";
+// Import allEvents from EventFilter.js
+import { allEvents } from "./EventFilter";
 
-const targetDate = new Date("2025-04-10T00:00:00");
+// Helper to format date and time
+const parseDateTime = (event) => {
+  return new Date(`${event.date} ${event.time}`);
+};
+
+// Get the next upcoming events with the same date and time
+const getNextUpcomingEvents = () => {
+  const now = new Date();
+  const upcomingEvents = allEvents
+    .map((event) => ({
+      ...event,
+      dateTime: parseDateTime(event),
+    }))
+    .filter((event) => event.dateTime > now) // Filter upcoming events
+    .sort((a, b) => a.dateTime - b.dateTime); // Sort by nearest time
+
+  // Get the first event's date and time if available
+  if (upcomingEvents.length === 0) return [];
+
+  const nextEventDateTime = upcomingEvents[0].dateTime;
+
+  // Filter events with the same date and time
+  return upcomingEvents.filter(
+    (event) => event.dateTime.getTime() === nextEventDateTime.getTime()
+  );
+};
 
 const Countdown = () => {
+  const [nextEvents, setNextEvents] = useState(getNextUpcomingEvents());
+
   const calculateTimeLeft = () => {
+    if (nextEvents.length === 0) {
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }
+
     const now = new Date();
-    const difference = targetDate - now;
+    const difference = nextEvents[0].dateTime - now;
 
     if (difference <= 0) {
       return { days: 0, hours: 0, minutes: 0, seconds: 0 };
@@ -29,30 +62,50 @@ const Countdown = () => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
+    // Recheck for next events when the countdown finishes
+    if (
+      timeLeft.days === 0 &&
+      timeLeft.hours === 0 &&
+      timeLeft.minutes === 0 &&
+      timeLeft.seconds === 0
+    ) {
+      setNextEvents(getNextUpcomingEvents());
+    }
+
     return () => clearInterval(interval);
-  }, []);
+  }, [timeLeft]);
 
   return (
     <div className="countdown-container">
-      <h2 className="countdown-title">Hackathon 2025 Starts In:</h2>
-      <div className="countdown-timer">
-        <div>
-          <span>{timeLeft.days}</span>
-          <p>Days</p>
-        </div>
-        <div>
-          <span>{timeLeft.hours}</span>
-          <p>Hours</p>
-        </div>
-        <div>
-          <span>{timeLeft.minutes}</span>
-          <p>Minutes</p>
-        </div>
-        <div>
-          <span>{timeLeft.seconds}</span>
-          <p>Seconds</p>
-        </div>
-      </div>
+      {nextEvents.length > 0 ? (
+        <>
+          <h2 className="countdown-title">
+            {nextEvents.length === 1
+              ? `${nextEvents[0].title} Starts In:`
+              : `${nextEvents.map((event) => event.title).join(", ")} Start In:`}
+          </h2>
+          <div className="countdown-timer">
+            <div>
+              <span>{timeLeft.days}</span>
+              <p>Days</p>
+            </div>
+            <div>
+              <span>{timeLeft.hours}</span>
+              <p>Hours</p>
+            </div>
+            <div>
+              <span>{timeLeft.minutes}</span>
+              <p>Minutes</p>
+            </div>
+            <div>
+              <span>{timeLeft.seconds}</span>
+              <p>Seconds</p>
+            </div>
+          </div>
+        </>
+      ) : (
+        <h2 className="countdown-title">No Upcoming Events!</h2>
+      )}
     </div>
   );
 };

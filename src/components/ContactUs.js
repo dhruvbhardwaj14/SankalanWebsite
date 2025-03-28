@@ -200,8 +200,7 @@ const ContactUs = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="social-icon" /> Delhi University Computer
-              Science
+              <FaLinkedin className="social-icon" /> Department of Computer Science
             </a>
           </Wrapper>
         </Wrapper>
