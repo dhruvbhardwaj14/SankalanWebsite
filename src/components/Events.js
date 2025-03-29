@@ -70,7 +70,7 @@ const technicalEvents = [
       "Decisions made by the event organizers will be final and binding.",
 
     ],
-    link:"#"
+    link:"https://unstop.com/p/blind-coding-sankalan-2025-department-of-computer-science-delhi-university-1447422?lb=M3xT1uzj&utm_medium=Share&utm_source=WhatsApp"
   },
   {
     id: 3,
