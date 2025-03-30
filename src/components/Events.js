@@ -233,7 +233,7 @@ const nonTechnicalEvents = [
   },
   {
     id: 9,
-    title: "FEETS ON FIRE",
+    title: "FEET ON FIRE",
     description: "💃🔥 Unleash the Rhythm, Own the Stage! 🕺✨",
     longDescription:
       "Join us for an electrifying Group Dance Competition where rhythm meets passion! Witness teams set the fire with their synchronized moves, dynamic formations and captivating performances. This is your chance to experience the energy, creativity and teamwork of talented dancers as they compete for the top spot. “Get ready to groove ,cheer and be amazed!",
@@ -256,7 +256,7 @@ const nonTechnicalEvents = [
       "Participants are required to share their account details through a form for transfer of prize money to winners.",  
       "One member from each team needs to register themselves representing the whole team."
     ],
-    link:"https://docs.google.com/forms/d/e/1FAIpQLSext6l_qGW_Y-lyUo8swQ5VtBtzNfQbiyN69sNdLDw4jptDGg/viewform?usp=sharing"
+    link:"#"
   },
 ];
 
