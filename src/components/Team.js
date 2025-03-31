@@ -67,7 +67,7 @@ const teamMembers = {
     },
     {
       name: "Nishant Sharma",
-      role: "Head of Design Team and Promotions Team",
+      role: "Head of Design Team",
       img: nishantS,
       linkedin: "https://www.linkedin.com/in/sharmanishant731/",
       github: "https://github.com/sharmanishant731",

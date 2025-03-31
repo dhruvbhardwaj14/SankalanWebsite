@@ -210,8 +210,9 @@ const nonTechnicalEvents = [
                   Dastur-e-Mehfil mein har shayar hai asar. 🎙️✨`,
     longDescription:
       `Poetry is the voice of the soul, an art that transcends barriers and brings emotions to life. Mehfil is an inter-college poetry competition that welcomes all college students to express themselves through the beauty of words. With an open theme, participants have the freedom to weave their thoughts into compelling verses that resonate with the audience.
-      The competition consists of two rounds: a preliminary selection and a live performance. Aspiring poets will first submit their pieces online, and the most impactful submissions will be chosen for the final round. In the grand finale, selected poets will perform their pieces live before a panel of esteemed judges and an engaged audience.
-      Participants can choose to present their poetry in either Hindi or English, and the winners will be decided regardless of the language based on the overall performance scores provided by the judges.`,
+        The competition consists of two rounds: a preliminary selection and a live performance. Aspiring poets will first submit their pieces online, and the most impactful submissions will be chosen for the final round. In the grand finale, selected poets will perform their pieces live before a panel of esteemed judges and an engaged audience.
+
+        Participants can choose to present their poetry in either Hindi or English, and winners will be selected separately for each language. There will be two winners from Hindi and two from English, ensuring fair recognition of poetic excellence in both languages.`,
     date: "April 19, 2025",
     time: "1:30 PM",
     tag: "Non-Technical",
