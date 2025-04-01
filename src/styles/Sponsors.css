@@ -38,6 +38,7 @@
     flex-direction: column; /* Ensure proper alignment */
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .sponsor-card:hover {
@@ -45,7 +46,11 @@
     background: rgb(255, 255, 255) !important; /* Change background to white */
     color: black !important; /* Change text color for contrast */
 }
-
+.sponsor-card p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
 .sponsor-logo {
     width: 100px;
     height: 100px;

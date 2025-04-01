@@ -24,7 +24,6 @@ import deepakG from "../assets/PNG/deepakG.webp";
 import aryanT from "../assets/PNG/aryanT.webp";
 import nishantS from "../assets/PNG/nishantS.webp";
 import harshaV from "../assets/PNG/harshaV.webp"
-import deepakS from "../assets/PNG/deepakS.webp"
 import shivamY from "../assets/PNG/shivamY.webp"
 import sandeep from "../assets/PNG/sandeep.webp"
 // Organising Committe
@@ -184,15 +183,6 @@ const teamMembers = {
       linkedin: "https://www.linkedin.com/in/sandeep-pradeep-26138b215/",
       email: "sandeep.pradeep100@gmail.com",
     },
-    {
-      name: "Deepak Singh",
-      role: "Head of Feets on Fire",
-      img: deepakS,
-      linkedin: "https://www.linkedin.com/in/deepak-singh-a11a19253/",
-      email: "deepaksingh010822@gmail.com",
-    },
-
-    
   ],
   "Organising Committee": [
   {
