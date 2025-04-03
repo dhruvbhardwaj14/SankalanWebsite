@@ -257,7 +257,7 @@ const nonTechnicalEvents = [
       "Participants are required to share their account details through a form for transfer of prize money to winners.",  
       "One member from each team needs to register themselves representing the whole team."
     ],
-    link:"#"
+    link:"https://forms.gle/smGA2wPJQV3dN6DA6"
   },
 ];
 
