@@ -66,7 +66,7 @@ const events = [
   },
   {
     id: 9,
-    title: "FEETS ON FIRE",
+    title: "FEET ON FIRE",
     date: "2025-04-20",
     time: "5:30 PM",
     description:
