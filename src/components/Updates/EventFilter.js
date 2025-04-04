@@ -104,7 +104,7 @@ export const allEvents = [
   },
   {
     id: 9,
-    title: "FEETS ON FIRE",
+    title: "FEET ON FIRE",
     category: getEventCategory("2025-04-20"),
     date: "2025-04-20",
     time: "5:30 PM",
