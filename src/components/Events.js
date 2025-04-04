@@ -43,7 +43,7 @@ const technicalEvents = [
       "Qualified teams must arrange for travel and accommodation.",  
       "Food and beverages will be provided as part of the parent event."
     ],
-    link:"https://www.geeksforgeeks.org/hack-a-thon/hackducs-2025"
+    link:"#"
   },
   {
     id: 2,
