@@ -43,7 +43,7 @@ const technicalEvents = [
       "Qualified teams must arrange for travel and accommodation.",  
       "Food and beverages will be provided as part of the parent event."
     ],
-    link:"#"
+    link:"https://unstop.com/hackathons/hackducs-department-of-computer-science-university-of-delhi-1458579?lb=cdGChHz&utm_medium=Share&utm_source=shortUrl"
   },
   {
     id: 2,
@@ -257,7 +257,7 @@ const nonTechnicalEvents = [
       "Participants are required to share their account details through a form for transfer of prize money to winners.",  
       "One member from each team needs to register themselves representing the whole team."
     ],
-    link:"#"
+    link:"https://forms.gle/smGA2wPJQV3dN6DA6"
   },
 ];
 
