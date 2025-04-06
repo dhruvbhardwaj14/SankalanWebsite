@@ -199,7 +199,7 @@ const nonTechnicalEvents = [
     image:
       chakra,
     rules: [
-      "There's only one rule: be the first team to find all the clues and claim victory!",
+      "Team Size: 3-5 Members only.",
     ],
     link:"https://unstop.com/p/chakravyuh-treasure-hunt-sankalan-2025-department-of-computer-science-delhi-university-1447733?lb=2ANUz9oo&utm_medium=Share&utm_source=shortUrl"
   },
