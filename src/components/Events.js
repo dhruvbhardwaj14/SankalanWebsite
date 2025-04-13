@@ -120,7 +120,7 @@ const technicalEvents = [
     title: "Algoholics",
     description: `🔥 "May your loops be infinite, and your stack never overflow!" 🔥`,
     longDescription:
-      `The wait is over. The challenge is here. Welcome to ALCOHOLICS—the ultimate coding showdown at the Department of Computer Science, University of Delhi!
+      `The wait is over. The challenge is here. Welcome to ALGOHOLICS—the ultimate coding showdown at the Department of Computer Science, University of Delhi!
       Think you’ve mastered algorithms? Confident in your sorting wizardry? It’s time to prove it. Whether you're a rookie coder or a battle-hardened guardian of the code, this competition is for all.
       💡 The stakes? Low. The prizes? High.
       The problems will push your limits, testing not just your coding prowess but also your ability to optimize under pressure. Gigantic test cases await. Will your logic stand the test, or will your code crumble?
