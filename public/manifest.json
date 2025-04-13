@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Sankalan 2025",
+  "name": "Sankalan 2025 - DUCS, University of Delhi",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +19,8 @@
     }
   ],
   "start_url": ".",
+  "background_color": "#1E3C72",
+  "theme_color": "#1E3C72",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait"
 }

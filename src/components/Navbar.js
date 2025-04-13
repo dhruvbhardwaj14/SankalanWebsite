@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link} from 'react-router-dom';
 import '../styles/Navbar.css';
-import logo from '../assets/PNG/logo.png';
+import logo from '../assets/PNG/SankalanLogo.webp';
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -73,7 +73,7 @@ export default class Navbar extends Component {
               to="/"
               onClick={() => this.handleLinkClick("/")}
             >
-              <img src={logo} alt="Sankalan Logo" width="50" height="35" />
+              <img src={logo} alt="Sankalan Logo" width="100" height="70" />
             </Link>
             <button
               className={`navbar-toggler ${isOffcanvasOpen ? '' : 'collapsed'}`}
@@ -98,7 +98,6 @@ export default class Navbar extends Component {
                 </h5>
               </div>
               <div className="offcanvas-body">
-                <div className='col-2'></div>
                 <ul className="navbar-nav mx-auto mb-2 mt-4 mb-lg-0">
                   <li className="nav-item">
                     <Link
@@ -107,15 +106,6 @@ export default class Navbar extends Component {
                       onClick={() => this.handleLinkClick("/")}
                     >
                       HOME
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
-                      className={`nav-link ${activePath === "/about" ? "active" : ""}`}
-                      to="/about"
-                      onClick={() => this.handleLinkClick("/about")}
-                    >
-                      ABOUT
                     </Link>
                   </li>
                   <li className="nav-item">
@@ -172,17 +162,6 @@ export default class Navbar extends Component {
                       UPDATES
                     </Link>
                   </li> */}
-                </ul>
-                <ul className="navbar-nav ms-auto mb-2 mt-4 mb-lg-0">
-                  <li className="nav-item">
-                  <Link
-                    className={`nav-link register-button ${activePath === "/register" ? "active" : ""}`}
-                    to="/register"
-                    onClick={() => this.handleLinkClick("/register")}
-                  >
-                    REGISTER
-                  </Link>
-                </li>
                 </ul>
               </div>
             </div>

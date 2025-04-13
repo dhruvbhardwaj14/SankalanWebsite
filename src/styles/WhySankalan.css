@@ -1,0 +1,221 @@
+/* Why Sankalan Section */
+.why-sankalan {
+    padding: 5vh 10vw;
+    background-color: #1c254c;
+    text-align: center;
+    color: white;
+  }
+  
+  .why-sankalan h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .why-sankalan span {
+    color: #ffcc00;
+  }
+  
+  /* USP Grid */
+  .usp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  /* USP Card */
+  .usp-card {
+    background: rgba(42, 82, 152, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .usp-card img {
+    width: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .usp-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .usp-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Hover Effect */
+  .usp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .why-sankalan h2 {
+      font-size: 2.8rem;
+    }
+  
+    .usp-card {
+      padding: 18px;
+    }
+  
+    .usp-card h3 {
+      font-size: 1.4rem;
+    }
+  
+    .usp-card p {
+      font-size: 0.95rem;
+    }
+  
+    .usp-card img {
+      width: 70px;
+    }
+  }
+  @media (min-width: 1500px) {
+    .why-sankalan {
+      padding: 7vh 12vw;
+    }
+  
+    .why-sankalan h2 {
+      font-size: 3.5rem;
+    }
+  
+    .usp-card {
+      padding: 25px;
+    }
+  
+    .usp-card h3 {
+      font-size: 1.8rem;
+    }
+  
+    .usp-card p {
+      font-size: 1.1rem;
+    }
+  
+    .usp-card img {
+      width: 100px;
+    }
+  }
+  @media (min-width: 2000px) {
+    .why-sankalan h2 {
+      font-size: 4rem;
+    }
+  
+    .usp-card {
+      padding: 30px;
+    }
+  
+    .usp-card h3 {
+      font-size: 2rem;
+    }
+  
+    .usp-card p {
+      font-size: 1.2rem;
+    }
+  
+    .usp-card img {
+      width: 120px;
+    }
+  }
+  @media (max-width: 768px) {
+    .why-sankalan {
+      padding: 4vh 5vw;
+    }
+  
+    .why-sankalan h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+  
+    .usp-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .usp-card {
+      padding: 15px;
+    }
+  
+    .usp-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .usp-card p {
+      font-size: 0.9rem;
+    }
+  
+    .usp-card img {
+      width: 60px;
+    }
+  }
+  @media (max-width: 480px) {
+    .why-sankalan {
+      padding: 3vh 5vw;
+    }
+  
+    .why-sankalan h2 {
+      font-size: 2rem;
+    }
+  
+    .usp-card {
+      padding: 12px;
+      border-radius: 10px;
+    }
+  
+    .usp-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .usp-card p {
+      font-size: 0.85rem;
+    }
+  
+    .usp-card img {
+      width: 50px;
+    }
+  }
+  @media (min-width: 2800px) {
+    .why-sankalan {
+      padding: 10vh 15vw;
+    }
+  
+    .why-sankalan h2 {
+      font-size: 4.5rem; /* Larger title */
+      margin-bottom: 50px;
+    }
+  
+    .usp-card {
+      padding: 35px;
+      border-radius: 20px;
+    }
+  
+    .usp-card h3 {
+      font-size: 2.2rem;
+    }
+  
+    .usp-card p {
+      font-size: 1.3rem;
+      line-height: 1.7;
+    }
+  
+    .usp-card img {
+      width: 140px;
+      margin-bottom: 20px;
+    }
+  
+    /* Extra spacing for the grid */
+    .usp-grid {
+      gap: 40px;
+      margin-top: 30px;
+    }
+  }
+  @media (min-width: 1012px) and (max-width: 1362px) {
+    .usp-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+      gap: 30px;
+    }
+  }
+              

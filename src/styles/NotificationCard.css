@@ -1,0 +1,84 @@
+/* Notification Card Container */
+.notification-card {
+  background-color: #fef8e7;
+  border-left: 5px solid #f39c12;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* Title of Notification */
+.notification-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+/* Notification Message */
+.notification-message {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Date Section */
+.notification-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Close (Delete) Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #ff4d4d;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #e43e3e;
+}
+
+/* Notification Container */
+.notification-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Hide/Show Notifications */
+.notification-container.hide {
+  display: none;
+}
+
+.notification-container.show {
+  display: block;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  background-color: #1e3c72;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #f39c12;
+}

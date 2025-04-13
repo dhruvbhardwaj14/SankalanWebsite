@@ -1,0 +1,162 @@
+/* Footer Container */
+.footer-container {
+    background-color: #1e3c72; /* Dark blue to match the theme */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    border-top: 3px solid #ffcc00; /* Highlight line */
+    z-index: 10000;
+  }
+  
+  /* Footer Content */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .footer-link {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #fff;
+  }
+  
+  /* Divider between links */
+  .divider {
+    color: #ffcc00;
+    margin: 0 5px;
+  }
+  
+  /* Copyright Text */
+  .footer-copyright p {
+    font-size: 12px;
+    margin: 2px 0;
+    color: #ccc;
+  }
+  
+  /* Social Icons Section */
+  .footer-socials {
+    margin-top: 8px;
+  }
+  
+  .footer-socials a {
+    margin: 0 8px;
+    color: #ffcc00;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+  }
+  
+  /* Hover Effect on Social Icons */
+  .footer-socials a:hover {
+    transform: scale(1.2);
+    color: #fff;
+  }
+  /* Screens > 1200px */
+@media (min-width: 1200px) {
+  .footer-container {
+    padding: 30px 0;
+  }
+
+  .footer-links {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .footer-copyright p {
+    font-size: 14px;
+  }
+
+  .footer-socials a {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+}
+
+/* Screens > 1500px */
+@media (min-width: 1500px) {
+  .footer-container {
+    padding: 40px 0;
+  }
+
+  .footer-content {
+    gap: 12px;
+  }
+
+  .footer-links {
+    font-size: 18px;
+  }
+
+  .footer-copyright p {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  .footer-socials a {
+    font-size: 24px;
+    margin: 0 12px;
+  }
+}
+
+/* Screens > 2000px */
+@media (min-width: 2000px) {
+  .footer-container {
+    padding: 50px 0;
+  }
+
+  .footer-content {
+    gap: 15px;
+  }
+
+  .footer-links {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .footer-copyright p {
+    font-size: 16px;
+  }
+
+  .footer-socials a {
+    font-size: 26px;
+    margin: 0 15px;
+  }
+}
+
+/* Screens > 2800px */
+@media (min-width: 2800px) {
+  .footer-container {
+    padding: 60px 0;
+  }
+
+  .footer-content {
+    gap: 18px;
+  }
+
+  .footer-links {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  .footer-copyright p {
+    font-size: 18px;
+  }
+
+  .footer-socials a {
+    font-size: 28px;
+    margin: 0 18px;
+  }
+}

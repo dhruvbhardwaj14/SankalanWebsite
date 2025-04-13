@@ -1,0 +1,87 @@
+.countdown-container {
+  text-align: center;
+  background-color: #1e3c72;
+  padding: 30px;
+  color: white;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Countdown Item Styling */
+.countdown-timer div {
+  background: #f39c12;
+  padding: 15px;
+  border-radius: 10px;
+  width: 80px;
+}
+
+.countdown-timer span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.countdown-timer p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .countdown-container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .countdown-timer {
+    gap: 10px;
+  }
+
+  .countdown-timer div {
+    width: 60px;
+    padding: 12px;
+  }
+
+  .countdown-title {
+    font-size: 1.5rem;
+  }
+
+  .countdown-timer span {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-timer {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .countdown-timer div {
+    width: 50px;
+    padding: 10px;
+  }
+
+  .countdown-title {
+    font-size: 1.2rem;
+  }
+
+  .countdown-timer span {
+    font-size: 1rem;
+  }
+  .countdown-timer p {
+    font-size: 0.49rem;
+  }
+}

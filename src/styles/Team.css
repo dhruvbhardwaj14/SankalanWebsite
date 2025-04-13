@@ -1,0 +1,371 @@
+.team-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(to right, rgba(30, 60, 114, 0.5), rgba(42, 82, 152, 0.9)), 
+                url("../assets/PNG/backgroundOthers.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Header */
+.teamParallax {
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Stack elements properly */
+    align-items: center;
+    position: relative;
+    padding: 5vh 0 50px; /* Ensure bottom spacing */
+    overflow-y: auto; /* Enables vertical scrolling */
+    min-height: 100vh; /* Ensures it at least takes the full viewport height */
+  }
+  
+.team-header {
+    margin-top: 5vh; /* Ensures spacing from top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.team-title {
+    font-size: 5vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Make sure content stays below header */
+.team-content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+/* Left Side with Blue Box */
+.team-left {
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Blue Box Style */
+    background: linear-gradient(to bottom right, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Light border */
+    color: white;
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Right Side */
+.team-right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Team Categories with Left Alignment */
+
+.team-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Reduced gap */
+    margin-top: 1%;
+    margin-bottom: 10px;
+    justify-content: flex-start; /* Align to the left */
+}
+
+/* Category Button - Smaller and Compact */
+.category {
+    cursor: pointer;
+    font-size: 0.9rem; /* Smaller font size */
+    padding: 6px 12px; /* Compact padding */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Lighter border */
+    background: linear-gradient(to bottom right, rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.8)); /* Gradient */
+    transition: 0.3s ease-in-out;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect for Category - Subtle Glow */
+.category:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    border-color: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Active Category - Distinct Look with Glow Effect */
+.category.active {
+    background: white;
+    color: rgba(15, 40, 80, 1);
+    font-weight: bold;
+    border-color: rgba(42, 82, 152, 0.9);
+    box-shadow: 0 0 12px rgba(42, 82, 152, 0.8); /* Glow effect */
+    transform: scale(1.1);
+}
+
+
+/* Team Member List */
+/* Team Member List */
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Adjusted gap */
+    align-items: flex-start; /* Align left */
+}
+
+/* Team Member Button */
+.team-member {
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 8px 15px;
+    width: 90%;
+    text-align: left;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.1); /* Subtle background */
+    color: white;
+}
+
+/* Hover Effect for Team Members - Different Look */
+.team-member:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(8px); /* Slide effect */
+}
+
+/* Selected Team Member - Distinct Style */
+.team-member.selected {
+    background-color: white;
+    color: rgba(15, 40, 80, 1);
+    border-color: rgba(42, 82, 152, 0.8);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Carousel Container */
+.team-carousel {
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Inner carousel that moves up and down */
+.team-carousel-inner {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Vertical Slide Effect */
+.team-card {
+    width: 50vw;
+    height: 70vh;
+    text-align: center;
+    background: white;
+    color: #1e3c72;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Team Member Image */
+.team-img {
+    width: 50%;
+    height: 70%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    aspect-ratio: 1/1; /* Ensures square ratio */
+}
+
+/* Team Info */
+.team-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.team-info p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Social Links */
+.team-socials {
+    margin-top: 15px;
+}
+
+.team-socials a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.team-socials a:hover {
+    color: #005eff;
+    cursor: pointer;
+}
+
+/* Arrows */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.arrow {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    color: lightgray;
+}
+/* === Updated Grid Layout for Mobile === */
+.team-grid {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 15px;
+    justify-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px; /* Add padding to the sides */
+  }
+  
+  /* === New Mobile Card Design === */
+  .team-card-grid {
+    width: 42vw;
+    height: auto;
+    max-width: 220px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden; /* Ensures image stays within rounded corners */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Image covers upper portion fully */
+  .team-img-grid {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1; /* Ensures a square ratio */
+    object-fit: cover;
+  }
+  
+  /* Member Info */
+  .team-info-grid {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  /* Name Styling */
+  .team-info-grid h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+    color: #1e3c72;
+    font-weight: bold;
+  }
+  
+  /* Role Styling */
+  .team-info-grid p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  /* Social Links Styling */
+  .team-socials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  
+  /* Social Icons */
+  .team-socials-grid a {
+    font-size: 1.2rem;
+    color: #1e3c72;
+    transition: 0.3s;
+  }
+  
+  .team-socials-grid a:hover {
+    color: #005eff;
+  }
+  
+  /* Hover Effect for Grid Card */
+  .team-card-grid:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  }
+/* Media Query for Mobile */
+@media (max-width: 1011px) {
+    .team-right {
+        display: none; /* Hide carousel for mobile */
+    }
+
+    .team-left {
+        display: none;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2-3 per row */
+        gap: 12px;
+        width: 100%;
+        padding: 0 5px;
+        margin-top: 15px;
+    }
+
+    /* Adjusting Grid for Smaller Screens */
+    @media (max-width: 480px) {
+        .team-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 per row on very small screens */
+        }
+    }
+    @media (min-width:700px) and (max-width: 930px) {
+        .team-grid {
+            grid-template-columns: repeat(3, 1fr); /* 2 per row on very small screens */
+        }
+    }
+    @media (min-width:930px) and (max-width: 1011px) {
+        .team-grid {
+            grid-template-columns: repeat(4, 1fr); /* 2 per row on very small screens */
+        }
+    }
+    @media (min-width:320px) and (max-width: 550px) {
+        .category{
+            font-size: 0.49rem;
+        }
+    }
+
+}

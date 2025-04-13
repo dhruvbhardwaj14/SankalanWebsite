@@ -1,0 +1,163 @@
+/* Accordion Container */
+.accordion-item {
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Accordion Header */
+.accordion-header {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient Background */
+  border-radius: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.accordion-header:hover {
+  background: linear-gradient(45deg, #5fc0ff, #a07bfe);
+}
+
+/* Accordion Title */
+.accordion-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  transition: font-size 0.3s ease;
+  color: white;
+}
+
+/* Icon */
+.icon {
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.3s, font-size 0.3s;
+}
+
+/* Rotate icon on open */
+.icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* Accordion Body */
+.accordion-body {
+  max-height: 0;
+  padding: 0 15px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* Accordion Content */
+.accordion-content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  margin: 10px 0;
+  line-height: 1.6;
+  transition: font-size 0.3s ease;
+}
+
+/* When Accordion is Open */
+.accordion-body.open {
+  padding: 15px;
+}
+
+/* Highlighted Link Styles */
+.highlight-link {
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.highlight-link:hover {
+  text-decoration: underline;
+  color: #48e0c4;
+}
+
+/* 📱 Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .accordion-title {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .accordion-content {
+    font-size: 16px;
+  }
+}
+
+/* 💻 Larger Screens */
+
+/* Screens > 1200px */
+@media (min-width: 1200px) {
+  .accordion-title {
+    font-size: 22px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+
+  .accordion-content {
+    font-size: 20px;
+  }
+}
+
+/* Screens > 1500px */
+@media (min-width: 1500px) {
+  .accordion-title {
+    font-size: 24px;
+  }
+
+  .icon {
+    font-size: 26px;
+  }
+
+  .accordion-content {
+    font-size: 22px;
+  }
+}
+
+/* Screens > 2000px */
+@media (min-width: 2000px) {
+  .accordion-title {
+    font-size: 28px;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+
+  .accordion-content {
+    font-size: 24px;
+  }
+}
+
+/* Screens > 2800px */
+@media (min-width: 2800px) {
+  .accordion-title {
+    font-size: 32px;
+  }
+
+  .icon {
+    font-size: 32px;
+  }
+
+  .accordion-content {
+    font-size: 26px;
+  }
+}

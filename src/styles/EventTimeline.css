@@ -1,0 +1,313 @@
+/* Timeline Section */
+.timeline-section {
+  padding: 5vh 10vw;
+  background: linear-gradient(to right, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Timeline Heading */
+.timeline-section h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-section span {
+  color: #ffcc00;
+}
+
+/* Timeline Container */
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Vertical Line for Timeline */
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #ffcc00;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 1;
+}
+
+/* Timeline Item (Both Left & Right) */
+.timeline-item-left,
+.timeline-item-right {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* Left Side */
+.timeline-item-left {
+  left: 0;
+}
+
+/* Right Side */
+.timeline-item-right {
+  left: 50%;
+}
+
+/* Timeline Content */
+.timeline-content {
+  padding: 20px 30px;
+  background: rgba(42, 82, 152, 0.8);
+  border-radius: 12px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* Hover Effect */
+.timeline-content:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* Connectors */
+.timeline-item-left .timeline-content::before,
+.timeline-item-right .timeline-content::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* Left Connector Triangle */
+.timeline-item-left .timeline-content::before {
+  right: -20px;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent rgba(42, 82, 152, 0.8);
+}
+
+/* Right Connector Triangle */
+.timeline-item-right .timeline-content::before {
+  left: -20px;
+  border-width: 10px 20px 10px 0;
+  border-color: transparent rgba(42, 82, 152, 0.8) transparent transparent;
+}
+
+/* Content Heading */
+.timeline-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #ffcc00;
+}
+
+.timeline-content h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+
+/* Large Screens */
+@media (max-width: 1200px) {
+  .timeline-container {
+    padding: 0 20px;
+  }
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .timeline-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .timeline-item-left,
+  .timeline-item-right {
+    width: 100%;
+    padding: 20px;
+    left: 0;
+  }
+
+  .timeline-container::after {
+    left: 20px;
+  }
+
+  .timeline-item-left .timeline-content::before,
+  .timeline-item-right .timeline-content::before {
+    left: 20px;
+    border-width: 10px 20px 10px 0;
+    border-color: transparent rgba(42, 82, 152, 0.8) transparent transparent;
+  }
+
+  .timeline-item-left .timeline-content::before {
+    right: auto;
+    left: 20px;
+    border-width: 10px 20px 10px 0;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .timeline-section h2 {
+    font-size: 2rem;
+  }
+
+  .timeline-item-left,
+  .timeline-item-right {
+    width: 100%;
+    padding: 15px;
+    left: 0;
+  }
+
+  .timeline-container::after {
+    left: 10px;
+  }
+
+  .timeline-item-left .timeline-content::before,
+  .timeline-item-right .timeline-content::before {
+    left: 20px;
+    border-width: 10px 20px 10px 0;
+    border-color: transparent rgba(42, 82, 152, 0.8) transparent transparent;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .timeline-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .timeline-item-left,
+  .timeline-item-right {
+    padding: 10px;
+  }
+
+  .timeline-container::after {
+    left: 10px;
+  }
+
+  .timeline-item-left .timeline-content::before,
+  .timeline-item-right .timeline-content::before {
+    left: 15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent rgba(42, 82, 152, 0.8) transparent transparent;
+  }
+}
+
+/* 💻 Responsive Design for Larger Screens */
+
+/* Screens > 1500px */
+@media (min-width: 1500px) {
+  .timeline-section {
+    padding: 7vh 12vw;
+  }
+
+  .timeline-section h2 {
+    font-size: 3.5rem;
+  }
+
+  .timeline-container {
+    max-width: 1400px;
+  }
+
+  .timeline-content {
+    padding: 25px 35px;
+  }
+
+  .timeline-content h3 {
+    font-size: 2rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.6rem;
+  }
+
+  .timeline-content p {
+    font-size: 1.2rem;
+  }
+
+  .timeline-container::after {
+    width: 8px;
+  }
+}
+
+/* Screens > 2000px */
+@media (min-width: 2000px) {
+  .timeline-section {
+    padding: 8vh 15vw;
+  }
+
+  .timeline-section h2 {
+    font-size: 4rem;
+  }
+
+  .timeline-container {
+    max-width: 1600px;
+  }
+
+  .timeline-content {
+    padding: 30px 40px;
+  }
+
+  .timeline-content h3 {
+    font-size: 2.4rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.8rem;
+  }
+
+  .timeline-content p {
+    font-size: 1.3rem;
+  }
+
+  .timeline-container::after {
+    width: 10px;
+  }
+}
+
+/* Screens > 2800px */
+@media (min-width: 2800px) {
+  .timeline-section {
+    padding: 10vh 18vw;
+  }
+
+  .timeline-section h2 {
+    font-size: 4.5rem;
+  }
+
+  .timeline-container {
+    max-width: 1800px;
+  }
+
+  .timeline-content {
+    padding: 35px 50px;
+  }
+
+  .timeline-content h3 {
+    font-size: 2.6rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 2rem;
+  }
+
+  .timeline-content p {
+    font-size: 1.4rem;
+  }
+
+  .timeline-container::after {
+    width: 12px;
+  }
+}

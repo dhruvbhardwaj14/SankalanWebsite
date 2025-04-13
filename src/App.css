@@ -1,3 +1,19 @@
+/* Prevent Horizontal Scroll */
+body,
+html {
+  overflow-x: hidden; /* Disable horizontal scroll */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure Box Sizing Applies Correctly */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }

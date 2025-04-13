@@ -1,0 +1,58 @@
+.sponsors-container {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    max-width: 1200px; /* Ensure it doesn't take full width */
+    margin: 0 auto; /* Centering the container */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 100px;
+    max-height: 100vh; /* Prevent excessive height */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Use `auto-fill` for better wrapping */
+    gap: 20px;
+    justify-content:right;
+    align-items: center; /* Ensure proper alignment */
+    padding: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ensures horizontal layout */
+    gap: 20px;
+    justify-content: center; /* Centers grid items */
+    flex-wrap: wrap; /* Allow items to move to new lines */
+    overflow-y: auto; 
+}
+
+.sponsor-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Ensure proper alignment */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sponsor-card:hover {
+    transform: scale(1.09);
+    background: rgb(255, 255, 255) !important; /* Change background to white */
+    color: black !important; /* Change text color for contrast */
+}
+.sponsor-card p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+.sponsor-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
