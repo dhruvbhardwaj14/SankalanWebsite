@@ -39,7 +39,7 @@ import abhishek from "../assets/PNG/abhishek.webp"
 import ompal from "../assets/PNG/ompal.webp"
 import deepakJ from "../assets/PNG/deepakJ.webp"
 import pardeep from "../assets/PNG/pardeep.webp"
-const teamCategories = ["Team/Event Heads", "Organising Committee", "Administrative and DUCSS Panel"];
+const teamCategories = ["Team/Event Heads", "Administrative and DUCSS Panel"];
 
 const teamMembers = {
   "Team/Event Heads": [
@@ -52,7 +52,7 @@ const teamMembers = {
     },
     {
       name: "Aditi Sharma",
-      role: "Head of Design Team and Feets On Fire",
+      role: "Head of Design Team and Feet On Fire",
       img: aditiS,
       linkedin: "https://www.linkedin.com/in/aditi-sharma-1b2861209/",
       email: "aditi28217@gmail.com",
@@ -77,6 +77,27 @@ const teamMembers = {
       img: nikitaS,
       linkedin: "https://www.linkedin.com/in/nikita-singh-5527a2313/",
       email: "nikitamsc24@cs.du.ac.in",
+    },
+    {
+      name: "Chetan Verma",
+      role: "Head of Content Team",
+      img: chetan,
+      linkedin: "#",
+      email: "chetanvmsc23@cs.du.ac.in",
+    },
+    {
+      name: "Rohan",
+      role: "Head of Content and Decor Team",
+      img: rohan,
+      linkedin: "https://www.linkedin.com/in/rohankumar141414/",
+      email: "rohankmsc23@cs.du.ac.in",
+    },
+    {
+      name: "Pratibha Singh Chandel",
+      role: "Head of Decor Team",
+      img: pratibhaS,
+      linkedin: "https://www.linkedin.com/in/pratibha-singh-chandel-ab0a00169/",
+      github: "https://github.com/pratibhasc",
     },
     {
       name: "Deepak Goyal",
@@ -122,14 +143,14 @@ const teamMembers = {
     },
     {
       name: "Mayank Sharma",
-      role: "Head of Algolholics",
+      role: "Head of Algoholics",
       img: mayankS,
       linkedin: "https://www.linkedin.com/in/mayank-sharma-18feb2003",
       github: "https://GitHub.com/maydev18",
     },
     {
       name: "Girish Goyal",
-      role: "Head of Blind Code",
+      role: "Head of Blind Coding",
       img: girishG,
       linkedin: "https://www.linkedin.com/in/girish-goyal-653b21226/",
       email: "girishmkmca24@cs.du.ac.in",
@@ -184,62 +205,9 @@ const teamMembers = {
       email: "sandeep.pradeep100@gmail.com",
     },
   ],
-  "Organising Committee": [
-  {
-    name: "Gajender Singh",
-    role: "Organising Committee",
-    img:  gajender,
-    linkedin: "#",
-    email: "gsingh@cs.du.ac.in",
-  },
-  {
-    name: "Chetan Verma",
-    role: "Organising Committee",
-    img: chetan,
-    linkedin: "#",
-    email: "chetanvmsc23@cs.du.ac.in",
-  },
-  {
-    name: "Pratibha Singh Chandel",
-    role: "Organising Committee",
-    img: pratibhaS,
-    linkedin: "https://www.linkedin.com/in/pratibha-singh-chandel-ab0a00169/",
-    github: "https://github.com/pratibhasc",
-  },
-  {
-    name: "Abhishek Singh Yadav",
-    role: "Organising Committee",
-    img: abhishekS,
-    linkedin: "https://www.linkedin.com/in/abhishek-singh-yadav-70724a203",
-    email: "abhisheksmsc23@cs.du.ac.in",
-  },
-  {
-    name: "Harsh Yadav",
-    role: "Organising Committee",
-    img: harshY, 
-    linkedin: "https://bit.ly/4hAMs8X",
-    email: "harshyamsc23@cs.du.ac.in",
-  },
-  {
-    name: "Rohan",
-    role: "Organising Committee",
-    img: rohan,
-    linkedin: "https://www.linkedin.com/in/rohankumar141414/",
-    email: "rohankmsc23@cs.du.ac.in",
-  },
-  {
-    name: "Vinayak Bansal",
-    role: "Organising Committee",
-    img: vinayakB,
-    linkedin: "https://www.linkedin.com/in/procodomatic-vinayak-bansal/",
-    email: "vinayakbmsc23@cs.du.ac.in",
-  },
-
-],
-
   "Administrative and DUCSS Panel": [
   {
-    name: "Dr. Ompal",
+    name: "Dr. Om Pal",
     role: "Faculty Advisor, DUCSS",
     img: ompal,
     linkedin: "https://www.linkedin.com/in/om-pal-0b0b05322/",

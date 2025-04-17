@@ -37,6 +37,11 @@ const ContactUs = () => {
       email: "deepakjmsc24@cs.du.ac.in",
       phone: "+91 8000595793",
     },
+    {
+      name: "Dhruv Bhardwaj",
+      email: "dhruvmca24@cs.du.ac.in",
+      phone: "+91 7217681731",
+    },
   ];
 
   const coordinatorContacts = [
