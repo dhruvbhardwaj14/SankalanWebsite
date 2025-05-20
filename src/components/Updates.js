@@ -10,12 +10,12 @@ import NotificationCard from "./Updates/NotificationCard.js";
 const Updates = () => {
   // Initial Notification Data
   const initialNotifications = [
-    // {
-    //   title: "Hackathon Registration Open!",
-    //   message:
-    //     "Registrations for the Hackathon 2025 are now open. Hurry up and secure your spot before the deadline!",
-    //   date: "March 25, 2025",
-    // },
+    {
+      title: "Results Are OUT!",
+      message:
+        "Results for all Winners upto Top Third Position are released on our Official Instagram Handle (@sankalan.ducs) as well as our Results Tab in Navigation Bar !",
+      date: "May 1, 2025",
+    },
     // {
     //   title: "AI/ML Workshop Registration Open!",
     //   message:

@@ -19,6 +19,7 @@ import Updates from './components/Updates'
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Results from './components/Results';
 // cursor effects
 // import CursorGlow from './components/Cursor/CursorGlow'
 // import CursorTrail from './components/Cursor/CursorTrail'
@@ -56,6 +57,7 @@ function App() {
       <Route exact path="/faq" element={<Faq />} />
       <Route exact path="/sponsors" element={<Sponsor />} />
       <Route exact path="/updates" element={<Updates />} />
+      <Route exact path="/results" element={<Results />} />
       <Route exact path="/contact" element={<ContactUs />} />
       <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
